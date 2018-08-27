@@ -1,8 +1,8 @@
-var map = require( "lodash/map" );
-var addWordBoundary = require( "./addWordboundary.js" );
-var stripSpaces = require( "./stripSpaces.js" );
-var transliterate = require( "./transliterate.js" );
-var transliterateWP = require( "./transliterateWPstyle.js" );
+import map from 'lodash/map';
+import addWordBoundary from './addWordboundary.js';
+import stripSpaces from './stripSpaces.js';
+import transliterate from './transliterate.js';
+import transliterateWP from './transliterateWPstyle.js';
 
 /**
  * Creates a regex from the keyword with included wordboundaries.
@@ -21,7 +21,7 @@ var toRegex = function( keyword ) {
  * @param {string} locale The locale used for transliteration.
  * @returns {Array} All matches from the original as the transliterated text and keyword.
  */
-module.exports = function( text, keyword, locale ) {
+export default function( text, keyword, locale ) {
 	var keywordRegex = toRegex( keyword );
 	var matches = text.match( keywordRegex ) || [];
 

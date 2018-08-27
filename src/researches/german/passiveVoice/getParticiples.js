@@ -1,16 +1,16 @@
-var getWords = require( "../../../stringProcessing/getWords.js" );
-var regexFunction = require( "./regex.js" )();
+import getWords from '../../../stringProcessing/getWords.js';
+import regexFunctionFactory from './regex.js';
+const regexFunction = regexFunctionFactory();
 var verbsBeginningWithErVerEntBeZerHerUber = regexFunction.verbsBeginningWithErVerEntBeZerHerUber;
 var verbsBeginningWithGe = regexFunction.verbsBeginningWithGe;
 var verbsWithGeInMiddle = regexFunction.verbsWithGeInMiddle;
 var verbsWithErVerEntBeZerHerUberInMiddle = regexFunction.verbsWithErVerEntBeZerHerUberInMiddle;
 var verbsEndingWithIert = regexFunction.verbsEndingWithIert;
-var irregularParticiples = require( "./irregulars.js" )();
-
-var GermanParticiple = require( "./GermanParticiple.js" );
-
-var forEach = require( "lodash/forEach" );
-var includes = require( "lodash/includes" );
+import irregularParticiplesFactory from './irregulars.js';
+const irregularParticiples = irregularParticiplesFactory();
+import GermanParticiple from './GermanParticiple.js';
+import forEach from 'lodash/forEach';
+import includes from 'lodash/includes';
 
 /**
  * Creates GermanParticiple Objects for the participles found in a sentence.
@@ -21,7 +21,7 @@ var includes = require( "lodash/includes" );
  *
  * @returns {Array} The array with GermanParticiple Objects.
  */
-module.exports = function( sentencePartText, auxiliaries, language ) {
+export default function( sentencePartText, auxiliaries, language ) {
 	var words = getWords( sentencePartText );
 
 	var foundParticiples = [];

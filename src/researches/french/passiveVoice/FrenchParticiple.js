@@ -1,16 +1,16 @@
-var Participle = require( "../../../values/Participle.js" );
-var checkException = require( "../../passiveVoice/periphrastic/checkException.js" );
-var directPrecedenceException = require( "../../../stringProcessing/directPrecedenceException" );
-var precedenceException = require( "../../../stringProcessing/precedenceException" );
+import Participle from '../../../values/Participle.js';
+import checkException from '../../passiveVoice/periphrastic/checkException.js';
+import directPrecedenceException from '../../../stringProcessing/directPrecedenceException';
+import precedenceException from '../../../stringProcessing/precedenceException';
 
 var exceptionsParticiplesAdjectivesVerbs = require( "./exceptionsParticiples.js" )().adjectivesVerbs;
 var exceptionsParticiplesNounsVowel = require( "./exceptionsParticiples.js" )().nounsStartingWithVowel;
 var exceptionsParticiplesNounsConsonant = require( "./exceptionsParticiples.js" )().nounsStartingWithConsonant;
 var exceptionsParticiplesOthers = require( "./exceptionsParticiples.js" )().others;
 
-var includes = require( "lodash/includes" );
-var forEach = require( "lodash/forEach" );
-var memoize = require( "lodash/memoize" );
+import includes from 'lodash/includes';
+import forEach from 'lodash/forEach';
+import memoize from 'lodash/memoize';
 
 /**
  * Creates an Participle object for the French language.
@@ -159,4 +159,4 @@ FrenchParticiple.prototype.directPrecedenceException = directPrecedenceException
 
 FrenchParticiple.prototype.precedenceException = precedenceException;
 
-module.exports = FrenchParticiple;
+export default FrenchParticiple;

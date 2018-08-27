@@ -1,18 +1,16 @@
-let AssessmentResult = require( "../../values/AssessmentResult.js" );
-let stripTags = require( "../../stringProcessing/stripHTMLTags" ).stripIncompleteTags;
-
-let partition = require( "lodash/partition" );
-let sortBy = require( "lodash/sortBy" );
-let map = require( "lodash/map" );
-let filter = require( "lodash/filter" );
-let flatten = require( "lodash/flatten" );
-
-let Mark = require( "../../values/Mark.js" );
-let marker = require( "../../markers/addMark.js" );
+import AssessmentResult from '../../values/AssessmentResult.js';
+import { stripIncompleteTags as stripTags } from '../../stringProcessing/stripHTMLTags';
+import partition from 'lodash/partition';
+import sortBy from 'lodash/sortBy';
+import map from 'lodash/map';
+import filter from 'lodash/filter';
+import flatten from 'lodash/flatten';
+import Mark from '../../values/Mark.js';
+import marker from '../../markers/addMark.js';
 
 let maximumConsecutiveDuplicates = 2;
 
-let getLanguageAvailability = require( "../../helpers/getLanguageAvailability.js" );
+import getLanguageAvailability from '../../helpers/getLanguageAvailability.js';
 let availableLanguages = [ "en", "de", "es", "fr", "nl", "it", "ru" ];
 
 /**
@@ -109,7 +107,7 @@ let sentenceBeginningsAssessment = function( paper, researcher, i18n ) {
 	return assessmentResult;
 };
 
-module.exports = {
+export default {
 	identifier: "sentenceBeginnings",
 	getResult: sentenceBeginningsAssessment,
 	isApplicable: function( paper ) {

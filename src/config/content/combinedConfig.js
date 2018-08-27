@@ -1,15 +1,15 @@
-let defaultsDeep = require( "lodash/defaultsDeep" );
-let getLanguage = require( "./../../helpers/getLanguage" );
-let defaultConfig = require( "./default" );
-let it = require( "./it" );
-let ru = require( "./ru" );
+import defaultsDeep from 'lodash/defaultsDeep';
+import getLanguage from './../../helpers/getLanguage';
+import defaultConfig from './default';
+import it from './it';
+import ru from './ru';
 
 let configurations = {
 	it: it,
 	ru: ru,
 };
 
-module.exports = function( locale ) {
+export default function( locale ) {
 	let language = getLanguage( locale );
 	if( configurations.hasOwnProperty( language ) ) {
 		return defaultsDeep( configurations[ language ], defaultConfig );

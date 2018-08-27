@@ -1,6 +1,6 @@
-const isArray = require( "lodash/isArray" );
-const isObject = require( "lodash/isObject" );
-const mapValues = require( "lodash/mapValues" );
+import isArray from 'lodash/isArray';
+import isObject from 'lodash/isObject';
+import mapValues from 'lodash/mapValues';
 
 /**
  * Serializes a data structure to transfer it over a web worker message.

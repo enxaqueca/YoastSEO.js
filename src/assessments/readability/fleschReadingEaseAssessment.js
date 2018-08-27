@@ -1,8 +1,7 @@
-let AssessmentResult = require( "../../values/AssessmentResult.js" );
-let Assessment = require( "../../assessment.js" );
-const inRange = require( "lodash/inRange" );
-
-const getLanguageAvailability = require( "../../helpers/getLanguageAvailability.js" );
+import AssessmentResult from '../../values/AssessmentResult.js';
+import Assessment from '../../assessment.js';
+import inRange from 'lodash/inRange';
+import getLanguageAvailability from '../../helpers/getLanguageAvailability.js';
 
 const availableLanguages = [ "en", "nl", "de", "it", "ru", "fr", "es" ];
 
@@ -140,4 +139,4 @@ class FleschReadingEaseAssessment extends Assessment {
 	}
 }
 
-module.exports = FleschReadingEaseAssessment;
+export default FleschReadingEaseAssessment;

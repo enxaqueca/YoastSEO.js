@@ -1,9 +1,8 @@
-var getWords = require( "../stringProcessing/getWords.js" );
-var countSyllables = require( "../stringProcessing/syllables/count.js" );
-var getSentences = require( "../stringProcessing/getSentences.js" );
-
-var map = require( "lodash/map" );
-var forEach = require( "lodash/forEach" );
+import getWords from '../stringProcessing/getWords.js';
+import countSyllables from '../stringProcessing/syllables/count.js';
+import getSentences from '../stringProcessing/getSentences.js';
+import map from 'lodash/map';
+import forEach from 'lodash/forEach';
 
 /**
  * Gets the complexity per word, along with the index for the sentence.
@@ -30,7 +29,7 @@ var getWordComplexityForSentence = function( sentence ) {
  * @param {Paper} paper The Paper object to get the text from.
  * @returns {Object} The words found in the text with the number of syllables.
  */
-module.exports = function( paper ) {
+export default function( paper ) {
 	var sentences = getSentences( paper.getText() );
 
 	return map( sentences, function( sentence ) {

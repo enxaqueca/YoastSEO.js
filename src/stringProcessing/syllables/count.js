@@ -1,20 +1,18 @@
 /** @module stringProcessing/countSyllables */
 
-var syllableMatchers = require( "../../config/syllables.js" );
+import syllableMatchers from '../../config/syllables.js';
 
-var getWords = require( "../getWords.js" );
-
-var forEach = require( "lodash/forEach" );
-var filter = require( "lodash/filter" );
-var find = require( "lodash/find" );
-var isUndefined = require( "lodash/isUndefined" );
-var map = require( "lodash/map" );
-var sum = require( "lodash/sum" );
-var memoize = require( "lodash/memoize" );
-var flatMap = require( "lodash/flatMap" );
-
-var SyllableCountIterator = require( "../../helpers/syllableCountIterator.js" );
-var DeviationFragment = require( "./DeviationFragment" );
+import getWords from '../getWords.js';
+import forEach from 'lodash/forEach';
+import filter from 'lodash/filter';
+import find from 'lodash/find';
+import isUndefined from 'lodash/isUndefined';
+import map from 'lodash/map';
+import sum from 'lodash/sum';
+import memoize from 'lodash/memoize';
+import flatMap from 'lodash/flatMap';
+import SyllableCountIterator from '../../helpers/syllableCountIterator.js';
+import DeviationFragment from './DeviationFragment';
 
 /**
  * Counts vowel groups inside a word.
@@ -176,4 +174,4 @@ var countSyllablesInText = function( text, locale ) {
 	return sum( syllableCounts );
 };
 
-module.exports = countSyllablesInText;
+export default countSyllablesInText;

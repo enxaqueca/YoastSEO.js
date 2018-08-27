@@ -1,14 +1,13 @@
-var AssessmentResult = require( "../../values/AssessmentResult.js" );
-var removeSentenceTerminators = require( "../../stringProcessing/removeSentenceTerminators" );
-var formatNumber = require( "../../helpers/formatNumber.js" );
-var Mark = require( "../../values/Mark.js" );
-var addMark = require( "../../markers/addMark.js" );
-
-var filter = require( "lodash/filter" );
-var flatMap = require( "lodash/flatMap" );
-var zip = require( "lodash/zip" );
-var forEach = require( "lodash/forEach" );
-var flatten = require( "lodash/flatten" );
+import AssessmentResult from '../../values/AssessmentResult.js';
+import removeSentenceTerminators from '../../stringProcessing/removeSentenceTerminators';
+import formatNumber from '../../helpers/formatNumber.js';
+import Mark from '../../values/Mark.js';
+import addMark from '../../markers/addMark.js';
+import filter from 'lodash/filter';
+import flatMap from 'lodash/flatMap';
+import zip from 'lodash/zip';
+import forEach from 'lodash/forEach';
+import flatten from 'lodash/flatten';
 
 // The maximum recommended value is 3 syllables. With more than 3 syllables a word is considered complex.
 var recommendedValue = 3;
@@ -176,7 +175,7 @@ var wordComplexityAssessment = function( paper, researcher, i18n ) {
 	return assessmentResult;
 };
 
-module.exports = {
+export default {
 	identifier: "wordComplexity",
 	getResult: wordComplexityAssessment,
 	isApplicable: function( paper ) {

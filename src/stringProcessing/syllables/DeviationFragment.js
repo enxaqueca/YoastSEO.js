@@ -1,5 +1,5 @@
-var isUndefined = require( "lodash/isUndefined" );
-var pick = require( "lodash/pick" );
+import isUndefined from 'lodash/isUndefined';
+import pick from 'lodash/pick';
 
 /**
  * Represents a partial deviation when counting syllables
@@ -107,4 +107,4 @@ DeviationFragment.prototype.getSyllables = function() {
 	return this._syllables;
 };
 
-module.exports = DeviationFragment;
+export default DeviationFragment;

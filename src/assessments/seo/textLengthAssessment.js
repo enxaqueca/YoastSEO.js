@@ -1,8 +1,7 @@
-const inRange = require( "lodash/inRange" );
-const merge = require( "lodash/merge" );
-
-const AssessmentResult = require( "../../values/AssessmentResult.js" );
-const Assessment = require( "../../assessment.js" );
+import inRange from 'lodash/inRange';
+import merge from 'lodash/merge';
+import AssessmentResult from '../../values/AssessmentResult.js';
+import Assessment from '../../assessment.js';
 
 /**
  * Assessment that will test if the text is long enough.
@@ -196,4 +195,4 @@ class TextLengthAssessment extends Assessment {
 	}
 }
 
-module.exports = TextLengthAssessment;
+export default TextLengthAssessment;

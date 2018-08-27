@@ -1,6 +1,6 @@
-var getWordIndices = require( "../researches/passiveVoice/periphrastic/getIndicesWithRegex.js" );
-var precedesIndex = require( "./precedesIndex" );
-var arrayToRegex = require( "./createRegexFromArray.js" );
+import getWordIndices from '../researches/passiveVoice/periphrastic/getIndicesWithRegex.js';
+import precedesIndex from './precedesIndex';
+import arrayToRegex from './createRegexFromArray.js';
 var cannotBeBetweenAuxiliaryAndParticipleFrench = require( "../researches/french/functionWords.js" )().cannotBeBetweenPassiveAuxiliaryAndParticiple;
 var cannotBeBetweenAuxiliaryAndParticipleEnglish = require( "../researches/english/functionWords.js" )().cannotBeBetweenPassiveAuxiliaryAndParticiple;
 var cannotBeBetweenAuxiliaryAndParticipleSpanish = require( "../researches/spanish/functionWords.js" )().cannotBeBetweenPassiveAuxiliaryAndParticiple;
@@ -18,7 +18,7 @@ var cannotBeBetweenAuxiliaryAndParticipleItalian = require( "../researches/itali
  * @returns {boolean} Returns true if a word from the precedence exception list occurs anywhere in the
  * sentence part before the participle, otherwise returns false.
  */
-module.exports = function( sentencePart, participleIndex, language ) {
+export default function( sentencePart, participleIndex, language ) {
 	var precedenceExceptionRegex;
 	switch ( language ) {
 		case "fr":

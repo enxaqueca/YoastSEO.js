@@ -1,12 +1,11 @@
-var AssessmentResult = require( "../../values/AssessmentResult.js" );
-var stripHTMLTags = require( "../../stringProcessing/stripHTMLTags" ).stripBlockTagsAtStartEnd;
-var isParagraphTooLong = require( "../../helpers/isValueTooLong" );
-var Mark = require( "../../values/Mark.js" );
-var marker = require( "../../markers/addMark.js" );
-var inRange = require( "../../helpers/inRange.js" ).inRangeEndInclusive;
-
-var filter = require( "lodash/filter" );
-var map = require( "lodash/map" );
+import AssessmentResult from '../../values/AssessmentResult.js';
+import { stripBlockTagsAtStartEnd as stripHTMLTags } from '../../stringProcessing/stripHTMLTags';
+import isParagraphTooLong from '../../helpers/isValueTooLong';
+import Mark from '../../values/Mark.js';
+import marker from '../../markers/addMark.js';
+import { inRangeEndInclusive as inRange } from '../../helpers/inRange.js';
+import filter from 'lodash/filter';
+import map from 'lodash/map';
 
 // 150 is the recommendedValue for the maximum paragraph length.
 var recommendedValue = 150;
@@ -132,7 +131,7 @@ var paragraphLengthAssessment = function( paper, researcher, i18n ) {
 	return assessmentResult;
 };
 
-module.exports = {
+export default {
 	identifier: "textParagraphTooLong",
 	getResult: paragraphLengthAssessment,
 	isApplicable: function( paper ) {

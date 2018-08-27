@@ -1,7 +1,6 @@
-const merge = require( "lodash/merge" );
-
-const Assessment = require( "../../assessment" );
-const AssessmentResult = require( "../../values/AssessmentResult" );
+import merge from 'lodash/merge';
+import Assessment from '../../assessment';
+import AssessmentResult from '../../values/AssessmentResult';
 
 /**
  * Assessment to check whether the keyphrase is encountered in the first paragraph of the article.

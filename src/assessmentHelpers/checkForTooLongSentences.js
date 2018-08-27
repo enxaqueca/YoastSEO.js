@@ -1,5 +1,5 @@
-var filter = require( "lodash/filter" );
-var isSentenceTooLong = require( "../helpers/isValueTooLong" );
+import filter from 'lodash/filter';
+import isSentenceTooLong from '../helpers/isValueTooLong';
 
 /**
  * Checks for too long sentences.
@@ -7,7 +7,7 @@ var isSentenceTooLong = require( "../helpers/isValueTooLong" );
  * @param {number} recommendedValue The recommended maximum length of sentence.
  * @returns {array} The array with objects containing too long sentences and their lengths.
  */
-module.exports = function( sentences, recommendedValue ) {
+export default function( sentences, recommendedValue ) {
 	var tooLongSentences = filter( sentences, function( sentence ) {
 		return isSentenceTooLong( recommendedValue, sentence.sentenceLength );
 	} );

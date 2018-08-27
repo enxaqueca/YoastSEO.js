@@ -1,7 +1,6 @@
-var filter = require( "lodash/filter" );
-
-var transliterate = require( "./transliterate.js" );
-var getWords = require( "./getWords.js" );
+import filter from 'lodash/filter';
+import transliterate from './transliterate.js';
+import getWords from './getWords.js';
 
 /**
  * Counts the number of occurrences of a word in a text.
@@ -11,7 +10,7 @@ var getWords = require( "./getWords.js" );
  * @param {String} locale The locale used for transliteration.
  * @returns {Number} The number of occurrences.
  */
-module.exports = function( text, wordToMatch, locale ) {
+export default function( text, wordToMatch, locale ) {
 	var words = getWords( text );
 	var count = filter( words, function( word ) {
 		return ( wordToMatch === word || transliterate( wordToMatch, locale ) === word );

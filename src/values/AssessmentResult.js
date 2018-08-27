@@ -1,8 +1,7 @@
-const isArray = require( "lodash/isArray" );
-const isUndefined = require( "lodash/isUndefined" );
-const isNumber = require( "lodash/isNumber" );
-
-const Mark = require( "./Mark" );
+import isArray from 'lodash/isArray';
+import isUndefined from 'lodash/isUndefined';
+import isNumber from 'lodash/isNumber';
+import Mark from './Mark';
 
 /**
  * A function that only returns an empty that can be used as an empty marker
@@ -225,4 +224,4 @@ AssessmentResult.parse = function( serialized ) {
 	return result;
 };
 
-module.exports = AssessmentResult;
+export default AssessmentResult;

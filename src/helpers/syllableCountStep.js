@@ -1,6 +1,5 @@
-var isUndefined = require( "lodash/isUndefined" );
-
-var arrayToRegex = require( "../stringProcessing/createRegexFromArray.js" );
+import isUndefined from 'lodash/isUndefined';
+import arrayToRegex from '../stringProcessing/createRegexFromArray.js';
 
 /**
  * Constructs a language syllable regex that contains a regex for matching syllable exclusion.
@@ -62,4 +61,4 @@ SyllableCountStep.prototype.countSyllables = function( word ) {
 	return 0;
 };
 
-module.exports = SyllableCountStep;
+export default SyllableCountStep;

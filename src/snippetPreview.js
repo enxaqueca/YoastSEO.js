@@ -1,24 +1,21 @@
-var isEmpty = require( "lodash/isEmpty" );
-var isElement = require( "lodash/isElement" );
-var isUndefined = require( "lodash/isUndefined" );
-var clone = require( "lodash/clone" );
-var defaultsDeep = require( "lodash/defaultsDeep" );
-var forEach = require( "lodash/forEach" );
-var debounce = require( "lodash/debounce" );
-
-var createWordRegex = require( "./stringProcessing/createWordRegex.js" );
-var stripHTMLTags = require( "./stringProcessing/stripHTMLTags.js" ).stripFullTags;
-var stripSpaces = require( "./stringProcessing/stripSpaces.js" );
-var replaceDiacritics = require( "./stringProcessing/replaceDiacritics.js" );
-var transliterate = require( "./stringProcessing/transliterate.js" );
-
-var templates = require( "./templates.js" );
+import isEmpty from 'lodash/isEmpty';
+import isElement from 'lodash/isElement';
+import isUndefined from 'lodash/isUndefined';
+import clone from 'lodash/clone';
+import defaultsDeep from 'lodash/defaultsDeep';
+import forEach from 'lodash/forEach';
+import debounce from 'lodash/debounce';
+import createWordRegex from './stringProcessing/createWordRegex.js';
+import { stripFullTags as stripHTMLTags } from './stringProcessing/stripHTMLTags.js';
+import stripSpaces from './stringProcessing/stripSpaces.js';
+import replaceDiacritics from './stringProcessing/replaceDiacritics.js';
+import transliterate from './stringProcessing/transliterate.js';
+import templates from './templates.js';
 var snippetEditorTemplate = templates.snippetEditor;
 var hiddenElement = templates.hiddenSpan;
 
-var SnippetPreviewToggler = require( "./snippetPreviewToggler" );
-
-var domManipulation = require( "./helpers/domManipulation.js" );
+import SnippetPreviewToggler from './snippetPreviewToggler';
+import domManipulation from './helpers/domManipulation.js';
 
 import Config from "./config/config";
 
@@ -1358,5 +1355,6 @@ SnippetPreview.prototype.hideEditIcon = function() {};
  * @param ev The event.
  */
 SnippetPreview.prototype.setFocus = function( ev ) {};
+
 /* eslint-disable */
-module.exports = SnippetPreview;
+export default SnippetPreview;

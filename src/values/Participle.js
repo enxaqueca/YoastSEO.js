@@ -1,8 +1,7 @@
-var getType = require( "./../helpers/types.js" ).getType;
-var isSameType = require( "./../helpers/types.js" ).isSameType;
-
-var defaults = require( "lodash/defaults" );
-var forEach = require( "lodash/forEach" );
+import { getType } from './../helpers/types.js';
+import { isSameType } from './../helpers/types.js';
+import defaults from 'lodash/defaults';
+import forEach from 'lodash/forEach';
 
 /**
  * Default attributes to be used by the Participle if they are left undefined.
@@ -165,4 +164,4 @@ Participle.parse = function( serialized ) {
 	return participle;
 };
 
-module.exports = Participle;
+export default Participle;

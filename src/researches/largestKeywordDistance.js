@@ -1,5 +1,5 @@
-const sortBy = require( "lodash/sortBy" );
-const topicCount = require( "./topicCount" );
+import sortBy from 'lodash/sortBy';
+import topicCount from './topicCount';
 
 /**
  * Gets the distance (in terms of characters) between two keywords, between the beginning
@@ -83,7 +83,7 @@ const getLargestDistanceInCharacters = function( keywordDistances ) {
  * @returns {number} Returns the largest percentage of the text between two keyword occurrences
  *                   or a keyword occurrence and the start/end of the text.
  */
-module.exports = function( paper ) {
+export default function( paper ) {
 	const keywordIndices = topicCount( paper ).matchesIndices;
 	const textLength = paper.getText().length;
 

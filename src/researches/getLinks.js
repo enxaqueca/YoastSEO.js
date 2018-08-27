@@ -1,9 +1,9 @@
 /** @module analyses/getLinkStatistics */
 
-let getAnchors = require( "../stringProcessing/getAnchorsFromText.js" );
+import getAnchors from '../stringProcessing/getAnchorsFromText.js';
 
-let map = require( "lodash/map" );
-let url = require( "../stringProcessing/url.js" );
+import map from 'lodash/map';
+import url from '../stringProcessing/url.js';
 
 /**
  * Checks a text for anchors and returns the number found.
@@ -11,7 +11,7 @@ let url = require( "../stringProcessing/url.js" );
  * @param {Object} paper The paper to get the text from.
  * @returns {Array} An array with the anchors
  */
-module.exports = function( paper ) {
+export default function( paper ) {
 	let anchors = getAnchors( paper.getText() );
 
 	return map( anchors, url.getFromAnchorTag );

@@ -1,8 +1,7 @@
-const merge = require( "lodash/merge" );
-
-const AssessmentResult = require( "../../values/AssessmentResult.js" );
-const Assessment = require( "../../assessment.js" );
-const inRange = require( "../../helpers/inRange" ).inRangeEndInclusive;
+import merge from 'lodash/merge';
+import AssessmentResult from '../../values/AssessmentResult.js';
+import Assessment from '../../assessment.js';
+import { inRangeEndInclusive as inRange } from '../../helpers/inRange';
 
 const maximumLength = 600;
 /**
@@ -133,4 +132,4 @@ class PageTitleWidthAssesment extends Assessment {
 	}
 }
 
-module.exports = PageTitleWidthAssesment;
+export default PageTitleWidthAssesment;

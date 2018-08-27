@@ -1,7 +1,8 @@
 /** @module stringProcessing/createRegexFromArray */
 
-var addWordBoundary = require( "../stringProcessing/addWordboundary.js" );
-var map = require( "lodash/map" );
+import addWordBoundary from '../stringProcessing/addWordboundary.js';
+
+import map from 'lodash/map';
 
 /**
  * Creates a regex of combined strings from the input array.
@@ -10,7 +11,7 @@ var map = require( "lodash/map" );
  * @param {boolean} [disableWordBoundary] Boolean indicating whether or not to disable word boundaries
  * @returns {RegExp} regex The regex created from the array.
  */
-module.exports = function( array, disableWordBoundary ) {
+export default function( array, disableWordBoundary ) {
 	var regexString;
 	var _disableWordBoundary = disableWordBoundary || false;
 

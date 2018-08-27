@@ -1,4 +1,4 @@
-var map = require( "lodash/map" );
+import map from 'lodash/map';
 
 /**
  * Gets all subheadings from the text and returns these in an array.
@@ -35,7 +35,7 @@ function getSubheadingContents( text ) {
 	return subheadings;
 }
 
-module.exports = {
+export default {
 	getSubheadings: getSubheadings,
 	getSubheadingContents: getSubheadingContents,
 };

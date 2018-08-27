@@ -1,19 +1,23 @@
-const forEach = require( "lodash/forEach" );
-const isEmpty = require( "lodash/isEmpty" );
-const map = require( "lodash/map" );
-
-const arrayToRegex = require( "../../../stringProcessing/createRegexFromArray.js" );
-const stripSpaces = require( "../../../stringProcessing/stripSpaces.js" );
+import forEach from 'lodash/forEach';
+import isEmpty from 'lodash/isEmpty';
+import map from 'lodash/map';
+import arrayToRegex from '../../../stringProcessing/createRegexFromArray.js';
+import stripSpaces from '../../../stringProcessing/stripSpaces.js';
 
 // German-specific imports.
-const SentencePartGerman = require( "../../german/passiveVoice/SentencePart.js" );
+import SentencePartGerman from '../../german/passiveVoice/SentencePart.js';
+
 const auxiliariesGerman = require( "../../german/passiveVoice/auxiliaries.js" )().allAuxiliaries;
-const stopwordsGerman = require( "../../german/passiveVoice/stopwords.js" )();
+import stopwordsGermanFactory from '../../german/passiveVoice/stopwords.js';
+const stopwordsGerman = stopwordsGermanFactory();
 
 // Dutch-specific imports.
-const SentencePartDutch = require( "../../dutch/passiveVoice/SentencePart.js" );
-const stopwordsDutch = require( "../../dutch/passiveVoice/stopwords.js" )();
-const auxiliariesDutch = require( "../../dutch/passiveVoice/auxiliaries.js" )();
+import SentencePartDutch from '../../dutch/passiveVoice/SentencePart.js';
+
+import stopwordsDutchFactory from '../../dutch/passiveVoice/stopwords.js';
+const stopwordsDutch = stopwordsDutchFactory();
+import auxiliariesDutchFactory from '../../dutch/passiveVoice/auxiliaries.js';
+const auxiliariesDutch = auxiliariesDutchFactory();
 
 // The language-specific variables.
 const languageVariables = {
@@ -103,4 +107,4 @@ function splitSentence( sentence, language ) {
 	return createSentenceParts( splitSentences, language );
 }
 
-module.exports = splitSentence;
+export default splitSentence;

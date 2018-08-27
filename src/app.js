@@ -1,34 +1,30 @@
-require( "./config/config.js" );
-
-var SnippetPreview = require( "./snippetPreview.js" );
-
-var defaultsDeep = require( "lodash/defaultsDeep" );
-var isObject = require( "lodash/isObject" );
-var isString = require( "lodash/isString" );
-var MissingArgument = require( "./errors/missingArgument" );
-var isUndefined = require( "lodash/isUndefined" );
-var isEmpty = require( "lodash/isEmpty" );
-var isFunction = require( "lodash/isFunction" );
-var isArray = require( "lodash/isArray" );
-var forEach = require( "lodash/forEach" );
-var debounce = require( "lodash/debounce" );
-var throttle = require( "lodash/throttle" );
-const merge = require( "lodash/merge" );
-
-var Jed = require( "jed" );
-
-var SEOAssessor = require( "./seoAssessor.js" );
+import './config/config.js';
+import SnippetPreview from './snippetPreview.js';
+import defaultsDeep from 'lodash/defaultsDeep';
+import isObject from 'lodash/isObject';
+import isString from 'lodash/isString';
+import MissingArgument from './errors/missingArgument';
+import isUndefined from 'lodash/isUndefined';
+import isEmpty from 'lodash/isEmpty';
+import isFunction from 'lodash/isFunction';
+import isArray from 'lodash/isArray';
+import forEach from 'lodash/forEach';
+import debounce from 'lodash/debounce';
+import throttle from 'lodash/throttle';
+import merge from 'lodash/merge';
+import Jed from 'jed';
+import SEOAssessor from './seoAssessor.js';
 import LargestKeywordDistanceAssessment from "./assessments/seo/LargestKeywordDistanceAssessment.js";
-var ContentAssessor = require( "./contentAssessor.js" );
-var CornerstoneSEOAssessor = require( "./cornerstone/seoAssessor.js" );
-var CornerstoneContentAssessor = require( "./cornerstone/contentAssessor.js" );
-var Researcher = require( "./researcher.js" );
-var AssessorPresenter = require( "./renderers/AssessorPresenter.js" );
-var Pluggable = require( "./pluggable.js" );
-var Paper = require( "./values/Paper.js" );
+import ContentAssessor from './contentAssessor.js';
+import CornerstoneSEOAssessor from './cornerstone/seoAssessor.js';
+import CornerstoneContentAssessor from './cornerstone/contentAssessor.js';
+import Researcher from './researcher.js';
+import AssessorPresenter from './renderers/AssessorPresenter.js';
+import Pluggable from './pluggable.js';
+import Paper from './values/Paper.js';
 import { measureTextWidth } from "./helpers/createMeasurementElement.js";
 
-var removeHtmlBlocks = require( "./stringProcessing/htmlParser.js" );
+import removeHtmlBlocks from './stringProcessing/htmlParser.js';
 
 const largestKeywordDistance = new LargestKeywordDistanceAssessment();
 
@@ -1012,4 +1008,4 @@ App.prototype.switchAssessors = function( useCornerStone ) {
 	} );
 };
 
-module.exports = App;
+export default App;

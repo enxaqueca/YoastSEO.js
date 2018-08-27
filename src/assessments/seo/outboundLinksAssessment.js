@@ -1,8 +1,7 @@
-const isEmpty = require( "lodash/isEmpty" );
-const merge = require( "lodash/merge" );
-
-const AssessmentResult = require( "../../values/AssessmentResult.js" );
-const Assessment = require( "../../assessment.js" );
+import isEmpty from 'lodash/isEmpty';
+import merge from 'lodash/merge';
+import AssessmentResult from '../../values/AssessmentResult.js';
+import Assessment from '../../assessment.js';
 
 /**
  * Assessment for calculating the outbound links in the text.
@@ -141,4 +140,4 @@ class OutboundLinksAssessment extends Assessment {
 	}
 }
 
-module.exports = OutboundLinksAssessment;
+export default OutboundLinksAssessment;

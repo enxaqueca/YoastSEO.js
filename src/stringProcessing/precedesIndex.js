@@ -1,5 +1,5 @@
-var isEmpty = require( "lodash/isEmpty" );
-var forEach = require( "lodash/forEach" );
+import isEmpty from 'lodash/isEmpty';
+import forEach from 'lodash/forEach';
 
 /**
  * Checks whether a given word precedes a participle directly or indirectly.
@@ -9,7 +9,7 @@ var forEach = require( "lodash/forEach" );
  *
  * @returns {boolean} Returns true if the participle is preceded by a given word, otherwise returns false.
  */
-module.exports = function( precedingWords, participleIndex ) {
+export default function( precedingWords, participleIndex ) {
 	if ( isEmpty( precedingWords ) ) {
 		return false;
 	}

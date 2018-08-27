@@ -1,20 +1,20 @@
-let getWords = require( "../stringProcessing/getWords.js" );
-let getSentences = require( "../stringProcessing/getSentences.js" );
-let WordCombination = require( "../values/WordCombination.js" );
-let normalizeQuotes = require( "../stringProcessing/quotes.js" ).normalize;
-let functionWordLists = require( "../helpers/getFunctionWords.js" )();
-let getLanguage = require( "../helpers/getLanguage.js" );
-
-let filter = require( "lodash/filter" );
-let map = require( "lodash/map" );
-let forEach = require( "lodash/forEach" );
-let has = require( "lodash/has" );
-let flatMap = require( "lodash/flatMap" );
-let values = require( "lodash/values" );
-let take = require( "lodash/take" );
-let includes = require( "lodash/includes" );
-let intersection = require( "lodash/intersection" );
-let isEmpty = require( "lodash/isEmpty" );
+import getWords from '../stringProcessing/getWords.js';
+import getSentences from '../stringProcessing/getSentences.js';
+import WordCombination from '../values/WordCombination.js';
+import { normalize as normalizeQuotes } from '../stringProcessing/quotes.js';
+import functionWordListsFactory from '../helpers/getFunctionWords.js';
+const functionWordLists = functionWordListsFactory();
+import getLanguage from '../helpers/getLanguage.js';
+import filter from 'lodash/filter';
+import map from 'lodash/map';
+import forEach from 'lodash/forEach';
+import has from 'lodash/has';
+import flatMap from 'lodash/flatMap';
+import values from 'lodash/values';
+import take from 'lodash/take';
+import includes from 'lodash/includes';
+import intersection from 'lodash/intersection';
+import isEmpty from 'lodash/isEmpty';
 
 let densityLowerLimit = 0;
 let densityUpperLimit = 0.03;
@@ -307,7 +307,7 @@ function getRelevantWords( text, locale ) {
 	return take( combinations, relevantWordLimit );
 }
 
-module.exports = {
+export default {
 	getWordCombinations: getWordCombinations,
 	getRelevantWords: getRelevantWords,
 	calculateOccurrences: calculateOccurrences,

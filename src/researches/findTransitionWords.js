@@ -1,12 +1,11 @@
-var createRegexFromDoubleArray = require( "../stringProcessing/createRegexFromDoubleArray.js" );
-var getSentences = require( "../stringProcessing/getSentences.js" );
-var normalizeSingleQuotes = require( "../stringProcessing/quotes.js" ).normalizeSingle;
-var getTransitionWords = require( "../helpers/getTransitionWords.js" );
-var matchWordInSentence = require( "../stringProcessing/matchWordInSentence.js" ).isWordInSentence;
-
-var forEach = require( "lodash/forEach" );
-var filter = require( "lodash/filter" );
-var memoize = require( "lodash/memoize" );
+import createRegexFromDoubleArray from '../stringProcessing/createRegexFromDoubleArray.js';
+import getSentences from '../stringProcessing/getSentences.js';
+import { normalizeSingle as normalizeSingleQuotes } from '../stringProcessing/quotes.js';
+import getTransitionWords from '../helpers/getTransitionWords.js';
+import { isWordInSentence as matchWordInSentence } from '../stringProcessing/matchWordInSentence.js';
+import forEach from 'lodash/forEach';
+import filter from 'lodash/filter';
+import memoize from 'lodash/memoize';
 
 var createRegexFromDoubleArrayCached = memoize( createRegexFromDoubleArray );
 /**
@@ -84,7 +83,7 @@ var checkSentencesForTransitionWords = function( sentences, transitionWords ) {
  * @returns {object} An object with the total number of sentences in the text
  * and the total number of sentences containing one or more transition words.
  */
-module.exports = function( paper ) {
+export default function( paper ) {
 	var locale = paper.getLocale();
 	var transitionWords = getTransitionWords( locale );
 	var sentences = getSentences( paper.getText() );

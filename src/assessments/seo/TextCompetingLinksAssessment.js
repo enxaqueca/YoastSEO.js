@@ -1,11 +1,10 @@
-const map = require( "lodash/map" );
-const merge = require( "lodash/merge" );
-const isUndefined = require( "lodash/isUndefined" );
-
-const Assessment = require( "../../assessment" );
-const AssessmentResult = require( "../../values/AssessmentResult" );
-const Mark = require( "../../values/Mark" );
-const addMark = require( "../../markers/addMark" );
+import map from 'lodash/map';
+import merge from 'lodash/merge';
+import isUndefined from 'lodash/isUndefined';
+import Assessment from '../../assessment';
+import AssessmentResult from '../../values/AssessmentResult';
+import Mark from '../../values/Mark';
+import addMark from '../../markers/addMark';
 
 /**
  * Assessment to check whether you're linking to a different page with the focus keyword from this page.
