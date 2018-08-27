@@ -1,6 +1,6 @@
-import isEmpty from 'lodash/isEmpty';
-import forEach from 'lodash/forEach';
-import includes from 'lodash/includes';
+import isEmpty from "lodash/isEmpty";
+import forEach from "lodash/forEach";
+import includes from "lodash/includes";
 
 /**
  * Checks whether a given word is directly preceded by a word from a list of words.
@@ -30,4 +30,4 @@ export default function( precedingWords, matchIndex, addSpace = true ) {
 		precedingWordsEndIndices.push( precedingWordsEndIndex );
 	} );
 	return includes( precedingWordsEndIndices, matchIndex );
-};
+}

@@ -1,4 +1,4 @@
-import uniqBy from 'lodash/uniqBy';
+import uniqBy from "lodash/uniqBy";
 
 /**
  * Removes duplicate marks from an array

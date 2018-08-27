@@ -1,6 +1,6 @@
-import merge from 'lodash/merge';
-import AssessmentResult from '../../values/AssessmentResult.js';
-import Assessment from '../../assessment.js';
+import merge from "lodash/merge";
+import AssessmentResult from "../../values/AssessmentResult.js";
+import Assessment from "../../assessment.js";
 
 /**
  * Represents the assessment that will look if the images have alt-tags and checks if the keyword is present in one of them.

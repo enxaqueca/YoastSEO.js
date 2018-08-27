@@ -1,5 +1,5 @@
-import filter from 'lodash/filter';
-import isSentenceTooLong from '../helpers/isValueTooLong';
+import filter from "lodash/filter";
+import isSentenceTooLong from "../helpers/isValueTooLong";
 
 /**
  * Checks for too long sentences.
@@ -13,4 +13,4 @@ export default function( sentences, recommendedValue ) {
 	} );
 
 	return tooLongSentences;
-};
+}

@@ -1,12 +1,12 @@
-import determineSentencePartIsPassive from './determineSentencePartIsPassive.js';
-import getParticiples from './getParticiples.js';
+import determineSentencePartIsPassive from "./determineSentencePartIsPassive.js";
+import getParticiples from "./getParticiples.js";
 
 // Imports specific for German.
 const auxiliariesGerman = require( "../../german/passiveVoice/auxiliaries.js" )().allAuxiliaries;
-import getParticiplesGerman from '../../german/passiveVoice/getParticiples.js';
+import getParticiplesGerman from "../../german/passiveVoice/getParticiples.js";
 
 // Imports specific for Dutch.
-import auxiliariesDutchFactory from '../../dutch/passiveVoice/auxiliaries.js';
+import auxiliariesDutchFactory from "../../dutch/passiveVoice/auxiliaries.js";
 
 const auxiliariesDutch = auxiliariesDutchFactory();
 
@@ -50,4 +50,4 @@ export default function( sentencePartText, sentencePartAuxiliaries, language ) {
 	}
 
 	return determineSentencePartIsPassive( participles );
-};
+}

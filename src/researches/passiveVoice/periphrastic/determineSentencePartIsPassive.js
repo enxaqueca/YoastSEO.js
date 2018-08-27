@@ -1,4 +1,4 @@
-import forEach from 'lodash/forEach';
+import forEach from "lodash/forEach";
 
 /**
  * Checks if the participles make the sentence part passive.
@@ -15,4 +15,4 @@ export default function( participles ) {
 		}
 	} );
 	return passive;
-};
+}

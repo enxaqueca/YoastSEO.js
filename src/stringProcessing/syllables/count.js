@@ -1,18 +1,18 @@
 /** @module stringProcessing/countSyllables */
 
-import syllableMatchers from '../../config/syllables.js';
+import syllableMatchers from "../../config/syllables.js";
 
-import getWords from '../getWords.js';
-import forEach from 'lodash/forEach';
-import filter from 'lodash/filter';
-import find from 'lodash/find';
-import isUndefined from 'lodash/isUndefined';
-import map from 'lodash/map';
-import sum from 'lodash/sum';
-import memoize from 'lodash/memoize';
-import flatMap from 'lodash/flatMap';
-import SyllableCountIterator from '../../helpers/syllableCountIterator.js';
-import DeviationFragment from './DeviationFragment';
+import getWords from "../getWords.js";
+import forEach from "lodash/forEach";
+import filter from "lodash/filter";
+import find from "lodash/find";
+import isUndefined from "lodash/isUndefined";
+import map from "lodash/map";
+import sum from "lodash/sum";
+import memoize from "lodash/memoize";
+import flatMap from "lodash/flatMap";
+import SyllableCountIterator from "../../helpers/syllableCountIterator.js";
+import DeviationFragment from "./DeviationFragment";
 
 /**
  * Counts vowel groups inside a word.

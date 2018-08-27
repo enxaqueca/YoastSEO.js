@@ -1,5 +1,5 @@
-import matchTextWithWord from '../stringProcessing/matchTextWithWord.js';
-import escapeRegExp from 'lodash/escapeRegExp';
+import matchTextWithWord from "../stringProcessing/matchTextWithWord.js";
+import escapeRegExp from "lodash/escapeRegExp";
 
 /**
  * Matches the keyword in the description if a description and keyword are available.
@@ -14,5 +14,5 @@ export default function( paper ) {
 	}
 	var keyword = escapeRegExp( paper.getKeyword() );
 	return matchTextWithWord( paper.getDescription(), keyword, paper.getLocale() ).count;
-};
+}
 

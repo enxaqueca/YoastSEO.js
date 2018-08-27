@@ -1,9 +1,9 @@
-import merge from 'lodash/merge';
-import Assessment from '../../assessment';
-import AssessmentResult from '../../values/AssessmentResult';
-import countWords from '../../stringProcessing/countWords';
-import topicCount from '../../researches/topicCount';
-import { inRangeStartEndInclusive } from '../../helpers/inRange';
+import merge from "lodash/merge";
+import Assessment from "../../assessment";
+import AssessmentResult from "../../values/AssessmentResult";
+import countWords from "../../stringProcessing/countWords";
+import topicCount from "../../researches/topicCount";
+import { inRangeStartEndInclusive } from "../../helpers/inRange";
 
 /**
  * Returns a score based on the largest percentage of text in

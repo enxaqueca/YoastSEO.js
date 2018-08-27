@@ -1,4 +1,4 @@
-import isEmpty from 'lodash/isEmpty';
+import isEmpty from "lodash/isEmpty";
 
 /**
  * Sets sentence part passiveness to passive if no exception rules for the participle apply.
@@ -12,4 +12,4 @@ export default function() {
 	}
 
 	this.setSentencePartPassiveness( this.isPassive() );
-};
+}

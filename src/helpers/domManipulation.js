@@ -1,4 +1,4 @@
-import forEach from 'lodash/forEach';
+import forEach from "lodash/forEach";
 
 /**
  * Adds a class to an element

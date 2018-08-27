@@ -1,8 +1,8 @@
 /** @module researches/stopWordsInKeyword */
 
-import stopWordsInText from './stopWordsInText.js';
+import stopWordsInText from "./stopWordsInText.js";
 
-import escapeRegExp from 'lodash/escapeRegExp';
+import escapeRegExp from "lodash/escapeRegExp";
 
 /**
  * Checks for the amount of stop words in the keyword.
@@ -12,4 +12,4 @@ import escapeRegExp from 'lodash/escapeRegExp';
 export default function( paper ) {
 	var keyword = escapeRegExp( paper.getKeyword() );
 	return stopWordsInText( keyword );
-};
+}

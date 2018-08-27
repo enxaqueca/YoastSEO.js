@@ -1,6 +1,6 @@
-import SyllableCountStep from './syllableCountStep.js';
-import isUndefined from 'lodash/isUndefined';
-import forEach from 'lodash/forEach';
+import SyllableCountStep from "./syllableCountStep.js";
+import isUndefined from "lodash/isUndefined";
+import forEach from "lodash/forEach";
 
 /**
  * Creates a syllable count iterator.

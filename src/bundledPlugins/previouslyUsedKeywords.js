@@ -1,6 +1,6 @@
-import AssessmentResult from '../values/AssessmentResult.js';
-import isUndefined from 'lodash/isUndefined';
-import MissingArgument from '../errors/missingArgument';
+import AssessmentResult from "../values/AssessmentResult.js";
+import isUndefined from "lodash/isUndefined";
+import MissingArgument from "../errors/missingArgument";
 /**
  * @param {object} app The app
  * @param {object} args An arguments object with usedKeywords, searchUrl, postUrl,

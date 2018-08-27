@@ -1,5 +1,5 @@
-import isUndefined from 'lodash/isUndefined';
-import pick from 'lodash/pick';
+import isUndefined from "lodash/isUndefined";
+import pick from "lodash/pick";
 
 /**
  * Represents a partial deviation when counting syllables

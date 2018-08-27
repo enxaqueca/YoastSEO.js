@@ -1,6 +1,6 @@
-import defaults from 'lodash/defaults';
-import isEmpty from 'lodash/isEmpty';
-import isEqual from 'lodash/isEqual';
+import defaults from "lodash/defaults";
+import isEmpty from "lodash/isEmpty";
+import isEqual from "lodash/isEqual";
 
 /**
  * Default attributes to be used by the Paper if they are left undefined.

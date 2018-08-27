@@ -1,8 +1,8 @@
-import isUndefined from 'lodash/isUndefined';
-import forEach from 'lodash/forEach';
-import stripSpaces from '../stringProcessing/stripSpaces.js';
-import { isWordInSentence as matchWordInSentence } from '../stringProcessing/matchWordInSentence.js';
-import { characterInBoundary } from '../stringProcessing/matchWordInSentence.js';
+import isUndefined from "lodash/isUndefined";
+import forEach from "lodash/forEach";
+import stripSpaces from "../stringProcessing/stripSpaces.js";
+import { isWordInSentence as matchWordInSentence } from "../stringProcessing/matchWordInSentence.js";
+import { characterInBoundary } from "../stringProcessing/matchWordInSentence.js";
 
 /**
  * Returns the indices of a string in a text. If it is found multiple times, it will return multiple indices.

@@ -1,8 +1,8 @@
-import getWords from '../stringProcessing/getWords.js';
-import countSyllables from '../stringProcessing/syllables/count.js';
-import getSentences from '../stringProcessing/getSentences.js';
-import map from 'lodash/map';
-import forEach from 'lodash/forEach';
+import getWords from "../stringProcessing/getWords.js";
+import countSyllables from "../stringProcessing/syllables/count.js";
+import getSentences from "../stringProcessing/getSentences.js";
+import map from "lodash/map";
+import forEach from "lodash/forEach";
 
 /**
  * Gets the complexity per word, along with the index for the sentence.
@@ -38,5 +38,5 @@ export default function( paper ) {
 			words: getWordComplexityForSentence( sentence ),
 		};
 	} );
-};
+}
 

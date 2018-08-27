@@ -1,16 +1,16 @@
-import map from 'lodash/map';
-import isUndefined from 'lodash/isUndefined';
-import forEach from 'lodash/forEach';
-import isNaN from 'lodash/isNaN';
-import filter from 'lodash/filter';
-import flatMap from 'lodash/flatMap';
-import isEmpty from 'lodash/isEmpty';
-import negate from 'lodash/negate';
-import memoize from 'lodash/memoize';
-import core from 'tokenizer2/core';
-import { getBlocks } from '../helpers/html.js';
-import { normalize as normalizeQuotes } from '../stringProcessing/quotes.js';
-import { unifyNonBreakingSpace as unifyWhitespace } from '../stringProcessing/unifyWhitespace.js';
+import map from "lodash/map";
+import isUndefined from "lodash/isUndefined";
+import forEach from "lodash/forEach";
+import isNaN from "lodash/isNaN";
+import filter from "lodash/filter";
+import flatMap from "lodash/flatMap";
+import isEmpty from "lodash/isEmpty";
+import negate from "lodash/negate";
+import memoize from "lodash/memoize";
+import core from "tokenizer2/core";
+import { getBlocks } from "../helpers/html.js";
+import { normalize as normalizeQuotes } from "../stringProcessing/quotes.js";
+import { unifyNonBreakingSpace as unifyWhitespace } from "../stringProcessing/unifyWhitespace.js";
 
 // All characters that indicate a sentence delimiter.
 var fullStop = ".";
@@ -324,4 +324,4 @@ export default function( text ) {
 	sentences = flatMap( blocks, getSentencesFromBlockCached );
 
 	return filter( sentences, negate( isEmpty ) );
-};
+}

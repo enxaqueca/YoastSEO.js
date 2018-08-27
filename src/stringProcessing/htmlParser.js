@@ -1,7 +1,7 @@
 // We use an external library, which can be found here: https://github.com/fb55/htmlparser2.
-import htmlparser from 'htmlparser2';
+import htmlparser from "htmlparser2";
 
-import includes from 'lodash/includes';
+import includes from "lodash/includes";
 
 // The array containing the text parts without the blocks defined in inlineTags.
 let textArray;
@@ -80,4 +80,4 @@ export default function( text ) {
 	textArray = [];
 	parser.write( text );
 	return textArray.join( "" );
-};
+}

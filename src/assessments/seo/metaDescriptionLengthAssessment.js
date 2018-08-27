@@ -1,6 +1,6 @@
-import merge from 'lodash/merge';
-import AssessmentResult from '../../values/AssessmentResult.js';
-import Assessment from '../../assessment.js';
+import merge from "lodash/merge";
+import AssessmentResult from "../../values/AssessmentResult.js";
+import Assessment from "../../assessment.js";
 
 import Config from "../../config/config";
 

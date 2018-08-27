@@ -1,11 +1,11 @@
 /** @module stringProcessing/stringToRegex */
-import isUndefined from 'lodash/isUndefined';
+import isUndefined from "lodash/isUndefined";
 
-import replaceDiacritics from '../stringProcessing/replaceDiacritics.js';
-import addWordBoundary from '../stringProcessing/addWordboundary.js';
-import sanitizeString from '../stringProcessing/sanitizeString';
-import escapeRegExp from 'lodash/escapeRegExp';
-import memoize from 'lodash/memoize';
+import replaceDiacritics from "../stringProcessing/replaceDiacritics.js";
+import addWordBoundary from "../stringProcessing/addWordboundary.js";
+import sanitizeString from "../stringProcessing/sanitizeString";
+import escapeRegExp from "lodash/escapeRegExp";
+import memoize from "lodash/memoize";
 
 /**
  * Creates a regex from a string so it can be matched everywhere in the same way.

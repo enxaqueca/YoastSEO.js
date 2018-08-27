@@ -1,13 +1,13 @@
-import isArray from 'lodash/isArray';
-import isObject from 'lodash/isObject';
-import mapValues from 'lodash/mapValues';
-import AssessmentResult from '../../values/AssessmentResult';
-import Mark from '../../values/Mark';
-import Paper from '../../values/Paper';
-import Participle from '../../values/Participle';
-import Sentence from '../../values/Sentence';
-import SentencePart from '../../values/SentencePart';
-import WordCombination from '../../values/WordCombination';
+import isArray from "lodash/isArray";
+import isObject from "lodash/isObject";
+import mapValues from "lodash/mapValues";
+import AssessmentResult from "../../values/AssessmentResult";
+import Mark from "../../values/Mark";
+import Paper from "../../values/Paper";
+import Participle from "../../values/Participle";
+import Sentence from "../../values/Sentence";
+import SentencePart from "../../values/SentencePart";
+import WordCombination from "../../values/WordCombination";
 
 const PARSE_CLASSES = {
 	AssessmentResult,

@@ -1,5 +1,5 @@
 // External dependencies.
-import merge from 'lodash/merge';
+import merge from "lodash/merge";
 
 // Internal dependencies.
 import Task from "./Task";

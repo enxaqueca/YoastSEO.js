@@ -1,8 +1,8 @@
 // External dependencies.
-import isFunction from 'lodash/isFunction';
+import isFunction from "lodash/isFunction";
 
-import isNumber from 'lodash/isNumber';
-import isObject from 'lodash/isObject';
+import isNumber from "lodash/isNumber";
+import isObject from "lodash/isObject";
 
 class Task {
 	/**

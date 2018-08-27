@@ -1,6 +1,6 @@
-import merge from 'lodash/merge';
-import Assessment from '../../assessment';
-import AssessmentResult from '../../values/AssessmentResult';
+import merge from "lodash/merge";
+import Assessment from "../../assessment";
+import AssessmentResult from "../../values/AssessmentResult";
 
 /**
  * Represents the URL keyword assessments. This assessments will check if the keyword is present in the url.

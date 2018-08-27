@@ -1,5 +1,5 @@
-import forEach from 'lodash/forEach';
-import has from 'lodash/has';
+import forEach from "lodash/forEach";
+import has from "lodash/has";
 
 /**
  * Returns whether or not the given word is a function word.

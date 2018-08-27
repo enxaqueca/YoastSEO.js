@@ -1,13 +1,13 @@
 /** @module stringProcessing/matchTextWithWord */
 
-import stripSomeTags from '../stringProcessing/stripNonTextTags.js';
+import stripSomeTags from "../stringProcessing/stripNonTextTags.js";
 
-import stripSpaces from '../stringProcessing/stripSpaces.js';
-import removePunctuation from '../stringProcessing/removePunctuation.js';
-import { unifyAllSpaces as unifyWhitespace } from '../stringProcessing/unifyWhitespace.js';
-import matchStringWithTransliteration from '../stringProcessing/matchTextWithTransliteration.js';
-import { normalize as normalizeQuotes } from '../stringProcessing/quotes.js';
-import map from 'lodash/map';
+import stripSpaces from "../stringProcessing/stripSpaces.js";
+import removePunctuation from "../stringProcessing/removePunctuation.js";
+import { unifyAllSpaces as unifyWhitespace } from "../stringProcessing/unifyWhitespace.js";
+import matchStringWithTransliteration from "../stringProcessing/matchTextWithTransliteration.js";
+import { normalize as normalizeQuotes } from "../stringProcessing/quotes.js";
+import map from "lodash/map";
 
 /**
  * Returns the number of matches in a given string
@@ -32,4 +32,4 @@ export default function( text, wordToMatch, locale, extraBoundary ) {
 		count: matches.length,
 		matches: matches,
 	};
-};
+}

@@ -1,6 +1,6 @@
-import filter from 'lodash/filter';
-import transliterate from './transliterate.js';
-import getWords from './getWords.js';
+import filter from "lodash/filter";
+import transliterate from "./transliterate.js";
+import getWords from "./getWords.js";
 
 /**
  * Counts the number of occurrences of a word in a text.
@@ -16,4 +16,4 @@ export default function( text, wordToMatch, locale ) {
 		return ( wordToMatch === word || transliterate( wordToMatch, locale ) === word );
 	} );
 	return count.length;
-};
+}

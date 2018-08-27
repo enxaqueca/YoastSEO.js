@@ -1,11 +1,11 @@
 /** @module analyses/findKeywordInFirstParagraph */
 
-import matchParagraphs from '../stringProcessing/matchParagraphs.js';
+import matchParagraphs from "../stringProcessing/matchParagraphs.js";
 
-import wordMatch from '../stringProcessing/matchTextWithWord.js';
-import escapeRegExp from 'lodash/escapeRegExp';
-import reject from 'lodash/reject';
-import isEmpty from 'lodash/isEmpty';
+import wordMatch from "../stringProcessing/matchTextWithWord.js";
+import escapeRegExp from "lodash/escapeRegExp";
+import reject from "lodash/reject";
+import isEmpty from "lodash/isEmpty";
 
 /**
  * Counts the occurrences of the keyword in the first paragraph, returns 0 if it is not found,
@@ -20,4 +20,4 @@ export default function( paper ) {
 	const keyword = escapeRegExp( paper.getKeyword().toLocaleLowerCase() );
 	const paragraph = reject( paragraphs, isEmpty )[ 0 ] || "";
 	return wordMatch( paragraph, keyword, paper.getLocale() ).count;
-};
+}

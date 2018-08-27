@@ -1,9 +1,9 @@
 /** @module analyses/getKeywordCount */
 
-import matchWords from '../stringProcessing/matchTextWithWord.js';
+import matchWords from "../stringProcessing/matchTextWithWord.js";
 
-import unique from 'lodash/uniq';
-import escapeRegExp from 'lodash/escapeRegExp';
+import unique from "lodash/uniq";
+import escapeRegExp from "lodash/escapeRegExp";
 
 /**
  * Calculates the keyword count.
@@ -21,4 +21,4 @@ export default function( paper ) {
 		count: keywordsFound.count,
 		matches: unique( keywordsFound.matches ).sort( ( a, b ) => b.length - a.length ),
 	};
-};
+}

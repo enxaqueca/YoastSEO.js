@@ -1,6 +1,6 @@
-import isEmpty from 'lodash/isEmpty';
-import forEach from 'lodash/forEach';
-import includes from 'lodash/includes';
+import isEmpty from "lodash/isEmpty";
+import forEach from "lodash/forEach";
+import includes from "lodash/includes";
 
 /**
  * Checks whether a given word is followed by any word from a given list.
@@ -24,4 +24,4 @@ export default function( followingWords, match ) {
 	} );
 
 	return includes( followingWordsIndices, wordAfterMatchIndex );
-};
+}

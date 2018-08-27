@@ -1,11 +1,11 @@
 /** @module stringProcessing/countWords */
 
-import { stripFullTags as stripTags } from './stripHTMLTags.js';
+import { stripFullTags as stripTags } from "./stripHTMLTags.js";
 
-import stripSpaces from './stripSpaces.js';
-import removePunctuation from './removePunctuation.js';
-import map from 'lodash/map';
-import filter from 'lodash/filter';
+import stripSpaces from "./stripSpaces.js";
+import removePunctuation from "./removePunctuation.js";
+import map from "lodash/map";
+import filter from "lodash/filter";
 
 /**
  * Returns an array with words used in the text.
@@ -28,5 +28,5 @@ export default function( text ) {
 	return filter( words, function( word ) {
 		return word.trim() !== "";
 	} );
-};
+}
 

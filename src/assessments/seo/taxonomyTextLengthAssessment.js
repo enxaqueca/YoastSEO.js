@@ -1,5 +1,5 @@
-import AssessmentResult from '../../values/AssessmentResult.js';
-import inRange from 'lodash/inRange';
+import AssessmentResult from "../../values/AssessmentResult.js";
+import inRange from "lodash/inRange";
 
 const recommendedMinimum = 150;
 /**

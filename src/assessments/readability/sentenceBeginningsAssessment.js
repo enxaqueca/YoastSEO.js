@@ -1,16 +1,16 @@
-import AssessmentResult from '../../values/AssessmentResult.js';
-import { stripIncompleteTags as stripTags } from '../../stringProcessing/stripHTMLTags';
-import partition from 'lodash/partition';
-import sortBy from 'lodash/sortBy';
-import map from 'lodash/map';
-import filter from 'lodash/filter';
-import flatten from 'lodash/flatten';
-import Mark from '../../values/Mark.js';
-import marker from '../../markers/addMark.js';
+import AssessmentResult from "../../values/AssessmentResult.js";
+import { stripIncompleteTags as stripTags } from "../../stringProcessing/stripHTMLTags";
+import partition from "lodash/partition";
+import sortBy from "lodash/sortBy";
+import map from "lodash/map";
+import filter from "lodash/filter";
+import flatten from "lodash/flatten";
+import Mark from "../../values/Mark.js";
+import marker from "../../markers/addMark.js";
 
 let maximumConsecutiveDuplicates = 2;
 
-import getLanguageAvailability from '../../helpers/getLanguageAvailability.js';
+import getLanguageAvailability from "../../helpers/getLanguageAvailability.js";
 let availableLanguages = [ "en", "de", "es", "fr", "nl", "it", "ru" ];
 
 /**

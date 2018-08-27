@@ -1,8 +1,8 @@
-import map from 'lodash/map';
-import addWordBoundary from './addWordboundary.js';
-import stripSpaces from './stripSpaces.js';
-import transliterate from './transliterate.js';
-import transliterateWP from './transliterateWPstyle.js';
+import map from "lodash/map";
+import addWordBoundary from "./addWordboundary.js";
+import stripSpaces from "./stripSpaces.js";
+import transliterate from "./transliterate.js";
+import transliterateWP from "./transliterateWPstyle.js";
 
 /**
  * Creates a regex from the keyword with included wordboundaries.
@@ -45,6 +45,6 @@ export default function( text, keyword, locale ) {
 	return map( combinedArray, function( keyword ) {
 		return stripSpaces( keyword );
 	} );
-};
+}
 
 

@@ -1,22 +1,22 @@
-import forEach from 'lodash/forEach';
-import isEmpty from 'lodash/isEmpty';
-import map from 'lodash/map';
-import arrayToRegex from '../../../stringProcessing/createRegexFromArray.js';
-import stripSpaces from '../../../stringProcessing/stripSpaces.js';
+import forEach from "lodash/forEach";
+import isEmpty from "lodash/isEmpty";
+import map from "lodash/map";
+import arrayToRegex from "../../../stringProcessing/createRegexFromArray.js";
+import stripSpaces from "../../../stringProcessing/stripSpaces.js";
 
 // German-specific imports.
-import SentencePartGerman from '../../german/passiveVoice/SentencePart.js';
+import SentencePartGerman from "../../german/passiveVoice/SentencePart.js";
 
 const auxiliariesGerman = require( "../../german/passiveVoice/auxiliaries.js" )().allAuxiliaries;
-import stopwordsGermanFactory from '../../german/passiveVoice/stopwords.js';
+import stopwordsGermanFactory from "../../german/passiveVoice/stopwords.js";
 const stopwordsGerman = stopwordsGermanFactory();
 
 // Dutch-specific imports.
-import SentencePartDutch from '../../dutch/passiveVoice/SentencePart.js';
+import SentencePartDutch from "../../dutch/passiveVoice/SentencePart.js";
 
-import stopwordsDutchFactory from '../../dutch/passiveVoice/stopwords.js';
+import stopwordsDutchFactory from "../../dutch/passiveVoice/stopwords.js";
 const stopwordsDutch = stopwordsDutchFactory();
-import auxiliariesDutchFactory from '../../dutch/passiveVoice/auxiliaries.js';
+import auxiliariesDutchFactory from "../../dutch/passiveVoice/auxiliaries.js";
 const auxiliariesDutch = auxiliariesDutchFactory();
 
 // The language-specific variables.

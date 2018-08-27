@@ -1,15 +1,15 @@
-import Researcher from './researcher.js';
-import MissingArgument from './errors/missingArgument';
-import removeDuplicateMarks from './markers/removeDuplicateMarks';
-import AssessmentResult from './values/AssessmentResult.js';
-import { showTrace } from './helpers/errors.js';
-import isUndefined from 'lodash/isUndefined';
-import isFunction from 'lodash/isFunction';
-import forEach from 'lodash/forEach';
-import filter from 'lodash/filter';
-import map from 'lodash/map';
-import findIndex from 'lodash/findIndex';
-import find from 'lodash/find';
+import Researcher from "./researcher.js";
+import MissingArgument from "./errors/missingArgument";
+import removeDuplicateMarks from "./markers/removeDuplicateMarks";
+import AssessmentResult from "./values/AssessmentResult.js";
+import { showTrace } from "./helpers/errors.js";
+import isUndefined from "lodash/isUndefined";
+import isFunction from "lodash/isFunction";
+import forEach from "lodash/forEach";
+import filter from "lodash/filter";
+import map from "lodash/map";
+import findIndex from "lodash/findIndex";
+import find from "lodash/find";
 
 var ScoreRating = 9;
 

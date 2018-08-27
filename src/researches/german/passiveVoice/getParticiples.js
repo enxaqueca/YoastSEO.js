@@ -1,16 +1,16 @@
-import getWords from '../../../stringProcessing/getWords.js';
-import regexFunctionFactory from './regex.js';
+import getWords from "../../../stringProcessing/getWords.js";
+import regexFunctionFactory from "./regex.js";
 const regexFunction = regexFunctionFactory();
 var verbsBeginningWithErVerEntBeZerHerUber = regexFunction.verbsBeginningWithErVerEntBeZerHerUber;
 var verbsBeginningWithGe = regexFunction.verbsBeginningWithGe;
 var verbsWithGeInMiddle = regexFunction.verbsWithGeInMiddle;
 var verbsWithErVerEntBeZerHerUberInMiddle = regexFunction.verbsWithErVerEntBeZerHerUberInMiddle;
 var verbsEndingWithIert = regexFunction.verbsEndingWithIert;
-import irregularParticiplesFactory from './irregulars.js';
+import irregularParticiplesFactory from "./irregulars.js";
 const irregularParticiples = irregularParticiplesFactory();
-import GermanParticiple from './GermanParticiple.js';
-import forEach from 'lodash/forEach';
-import includes from 'lodash/includes';
+import GermanParticiple from "./GermanParticiple.js";
+import forEach from "lodash/forEach";
+import includes from "lodash/includes";
 
 /**
  * Creates GermanParticiple Objects for the participles found in a sentence.
@@ -65,4 +65,4 @@ export default function( sentencePartText, auxiliaries, language ) {
 		}
 	} );
 	return foundParticiples;
-};
+}

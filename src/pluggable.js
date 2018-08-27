@@ -1,9 +1,9 @@
-import isUndefined from 'lodash/isUndefined';
-import forEach from 'lodash/forEach';
-import reduce from 'lodash/reduce';
-import isString from 'lodash/isString';
-import isObject from 'lodash/isObject';
-import InvalidTypeError from './errors/invalidType';
+import isUndefined from "lodash/isUndefined";
+import forEach from "lodash/forEach";
+import reduce from "lodash/reduce";
+import isString from "lodash/isString";
+import isObject from "lodash/isObject";
+import InvalidTypeError from "./errors/invalidType";
 
 /**
  * The plugins object takes care of plugin registrations, preloading and managing data modifications.

@@ -1,5 +1,5 @@
-import isEmpty from 'lodash/isEmpty';
-import forEach from 'lodash/forEach';
+import isEmpty from "lodash/isEmpty";
+import forEach from "lodash/forEach";
 
 /**
  * Checks whether a given word precedes a participle directly or indirectly.
@@ -32,4 +32,4 @@ export default function( precedingWords, participleIndex ) {
 		return true;
 	}
 	return false;
-};
+}

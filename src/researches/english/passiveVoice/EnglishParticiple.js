@@ -1,12 +1,12 @@
-import Participle from '../../../values/Participle.js';
-import checkException from '../../passiveVoice/periphrastic/checkException.js';
-import nonVerbsEndingEdFactory from './non-verb-ending-ed.js';
+import Participle from "../../../values/Participle.js";
+import checkException from "../../passiveVoice/periphrastic/checkException.js";
+import nonVerbsEndingEdFactory from "./non-verb-ending-ed.js";
 const nonVerbsEndingEd = nonVerbsEndingEdFactory();
-import directPrecedenceException from '../../../stringProcessing/directPrecedenceException';
-import precedenceException from '../../../stringProcessing/precedenceException';
-import includes from 'lodash/includes';
-import isEmpty from 'lodash/isEmpty';
-import intersection from 'lodash/intersection';
+import directPrecedenceException from "../../../stringProcessing/directPrecedenceException";
+import precedenceException from "../../../stringProcessing/precedenceException";
+import includes from "lodash/includes";
+import isEmpty from "lodash/isEmpty";
+import intersection from "lodash/intersection";
 
 var irregularExclusionArray = [ "get", "gets", "getting", "got", "gotten" ];
 

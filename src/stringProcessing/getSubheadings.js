@@ -1,4 +1,4 @@
-import map from 'lodash/map';
+import map from "lodash/map";
 
 /**
  * Gets all subheadings from the text and returns these in an array.

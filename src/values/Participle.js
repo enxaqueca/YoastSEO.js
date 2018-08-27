@@ -1,7 +1,7 @@
-import { getType } from './../helpers/types.js';
-import { isSameType } from './../helpers/types.js';
-import defaults from 'lodash/defaults';
-import forEach from 'lodash/forEach';
+import { getType } from "./../helpers/types.js";
+import { isSameType } from "./../helpers/types.js";
+import defaults from "lodash/defaults";
+import forEach from "lodash/forEach";
 
 /**
  * Default attributes to be used by the Participle if they are left undefined.

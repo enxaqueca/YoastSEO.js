@@ -1,11 +1,11 @@
-import AssessmentResult from '../../values/AssessmentResult.js';
-import formatNumber from '../../helpers/formatNumber.js';
-import map from 'lodash/map';
-import { inRangeStartInclusive as inRange } from '../../helpers/inRange.js';
-import { stripIncompleteTags as stripTags } from '../../stringProcessing/stripHTMLTags';
-import Mark from '../../values/Mark.js';
-import marker from '../../markers/addMark.js';
-import getLanguageAvailability from '../../helpers/getLanguageAvailability.js';
+import AssessmentResult from "../../values/AssessmentResult.js";
+import formatNumber from "../../helpers/formatNumber.js";
+import map from "lodash/map";
+import { inRangeStartInclusive as inRange } from "../../helpers/inRange.js";
+import { stripIncompleteTags as stripTags } from "../../stringProcessing/stripHTMLTags";
+import Mark from "../../values/Mark.js";
+import marker from "../../markers/addMark.js";
+import getLanguageAvailability from "../../helpers/getLanguageAvailability.js";
 let availableLanguages = [ "en", "de", "es", "fr", "nl", "it", "pt", "ru", "ca" ];
 
 /**

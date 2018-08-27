@@ -1,9 +1,9 @@
 /** @module analyses/findKeywordInPageTitle */
 
-import wordMatch from '../stringProcessing/matchTextWithWord.js';
+import wordMatch from "../stringProcessing/matchTextWithWord.js";
 
-import { normalize as normalizeQuotes } from '../stringProcessing/quotes.js';
-import escapeRegExp from 'lodash/escapeRegExp';
+import { normalize as normalizeQuotes } from "../stringProcessing/quotes.js";
+import escapeRegExp from "lodash/escapeRegExp";
 
 /**
  * Counts the occurrences of the keyword in the pagetitle. Returns the number of matches
@@ -25,4 +25,4 @@ export default function( paper ) {
 	result.matches = wordMatch( title, keyword, locale ).count;
 	result.position = title.toLocaleLowerCase().indexOf( keyword );
 	return result;
-};
+}

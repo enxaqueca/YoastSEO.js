@@ -1,7 +1,7 @@
-import isUndefined from 'lodash/isUndefined';
-import merge from 'lodash/merge';
-import Assessment from '../../assessment';
-import AssessmentResult from '../../values/AssessmentResult';
+import isUndefined from "lodash/isUndefined";
+import merge from "lodash/merge";
+import Assessment from "../../assessment";
+import AssessmentResult from "../../values/AssessmentResult";
 
 /**
  * Assessment to check whether the keyphrase has a good length.

@@ -1,4 +1,4 @@
-import isEmpty from 'lodash/isEmpty.js';
+import isEmpty from "lodash/isEmpty.js";
 
 /**
  * Returns all texts per subheading.
@@ -23,6 +23,6 @@ export default function( text ) {
 	}
 
 	return subheadingsTexts;
-};
+}
 
 

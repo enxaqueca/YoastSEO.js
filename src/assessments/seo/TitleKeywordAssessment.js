@@ -1,7 +1,7 @@
-import merge from 'lodash/merge';
-import escape from 'lodash/escape';
-import Assessment from '../../assessment';
-import AssessmentResult from '../../values/AssessmentResult';
+import merge from "lodash/merge";
+import escape from "lodash/escape";
+import Assessment from "../../assessment";
+import AssessmentResult from "../../values/AssessmentResult";
 
 /**
  * Assessment to check whether the keyword is included in (the beginning of) the SEO title.

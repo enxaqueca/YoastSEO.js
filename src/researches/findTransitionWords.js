@@ -1,11 +1,11 @@
-import createRegexFromDoubleArray from '../stringProcessing/createRegexFromDoubleArray.js';
-import getSentences from '../stringProcessing/getSentences.js';
-import { normalizeSingle as normalizeSingleQuotes } from '../stringProcessing/quotes.js';
-import getTransitionWords from '../helpers/getTransitionWords.js';
-import { isWordInSentence as matchWordInSentence } from '../stringProcessing/matchWordInSentence.js';
-import forEach from 'lodash/forEach';
-import filter from 'lodash/filter';
-import memoize from 'lodash/memoize';
+import createRegexFromDoubleArray from "../stringProcessing/createRegexFromDoubleArray.js";
+import getSentences from "../stringProcessing/getSentences.js";
+import { normalizeSingle as normalizeSingleQuotes } from "../stringProcessing/quotes.js";
+import getTransitionWords from "../helpers/getTransitionWords.js";
+import { isWordInSentence as matchWordInSentence } from "../stringProcessing/matchWordInSentence.js";
+import forEach from "lodash/forEach";
+import filter from "lodash/filter";
+import memoize from "lodash/memoize";
 
 var createRegexFromDoubleArrayCached = memoize( createRegexFromDoubleArray );
 /**
@@ -94,4 +94,4 @@ export default function( paper ) {
 		sentenceResults: sentenceResults,
 		transitionWordSentences: sentenceResults.length,
 	};
-};
+}

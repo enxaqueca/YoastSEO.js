@@ -1,13 +1,13 @@
-import AssessmentResult from '../../values/AssessmentResult.js';
-import removeSentenceTerminators from '../../stringProcessing/removeSentenceTerminators';
-import formatNumber from '../../helpers/formatNumber.js';
-import Mark from '../../values/Mark.js';
-import addMark from '../../markers/addMark.js';
-import filter from 'lodash/filter';
-import flatMap from 'lodash/flatMap';
-import zip from 'lodash/zip';
-import forEach from 'lodash/forEach';
-import flatten from 'lodash/flatten';
+import AssessmentResult from "../../values/AssessmentResult.js";
+import removeSentenceTerminators from "../../stringProcessing/removeSentenceTerminators";
+import formatNumber from "../../helpers/formatNumber.js";
+import Mark from "../../values/Mark.js";
+import addMark from "../../markers/addMark.js";
+import filter from "lodash/filter";
+import flatMap from "lodash/flatMap";
+import zip from "lodash/zip";
+import forEach from "lodash/forEach";
+import flatten from "lodash/flatten";
 
 // The maximum recommended value is 3 syllables. With more than 3 syllables a word is considered complex.
 var recommendedValue = 3;

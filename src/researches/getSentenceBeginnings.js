@@ -1,10 +1,10 @@
-import getWords from '../stringProcessing/getWords.js';
-import stripSpaces from '../stringProcessing/stripSpaces.js';
-import { stripFullTags as stripTags } from '../stringProcessing/stripHTMLTags.js';
-import getFirstWordExceptions from '../helpers/getFirstWordExceptions.js';
-import isEmpty from 'lodash/isEmpty';
-import forEach from 'lodash/forEach';
-import filter from 'lodash/filter';
+import getWords from "../stringProcessing/getWords.js";
+import stripSpaces from "../stringProcessing/stripSpaces.js";
+import { stripFullTags as stripTags } from "../stringProcessing/stripHTMLTags.js";
+import getFirstWordExceptions from "../helpers/getFirstWordExceptions.js";
+import isEmpty from "lodash/isEmpty";
+import forEach from "lodash/forEach";
+import filter from "lodash/filter";
 
 /**
  * Compares the first word of each sentence with the first word of the following sentence.
@@ -109,6 +109,6 @@ export default function( paper, researcher ) {
 	sentenceBeginnings = filter( sentenceBeginnings );
 
 	return compareFirstWords( sentenceBeginnings, sentences );
-};
+}
 
 

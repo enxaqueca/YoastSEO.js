@@ -1,6 +1,6 @@
-import getSubheadingTexts from '../stringProcessing/getSubheadingTexts';
-import countWords from '../stringProcessing/countWords';
-import forEach from 'lodash/forEach';
+import getSubheadingTexts from "../stringProcessing/getSubheadingTexts";
+import countWords from "../stringProcessing/countWords";
+import forEach from "lodash/forEach";
 
 /**
  * Gets the subheadings from the text and returns the length of these subheading in an array.
@@ -19,4 +19,4 @@ export default function( paper ) {
 		} );
 	} );
 	return subHeadingTexts;
-};
+}

@@ -1,8 +1,8 @@
 /** @module stringProcessing/findKeywordInUrl */
 
-import matchTextWithTransliteration from './matchTextWithTransliteration.js';
+import matchTextWithTransliteration from "./matchTextWithTransliteration.js";
 
-import escapeRegExp from 'lodash/escapeRegExp';
+import escapeRegExp from "lodash/escapeRegExp";
 
 /**
  * Matches the keyword in the URL.
@@ -21,4 +21,4 @@ export default function( url, keyword, locale ) {
 	}
 
 	return false;
-};
+}

@@ -1,6 +1,6 @@
-import merge from 'lodash/merge';
-import Assessment from '../../assessment';
-import AssessmentResult from '../../values/AssessmentResult';
+import merge from "lodash/merge";
+import Assessment from "../../assessment";
+import AssessmentResult from "../../values/AssessmentResult";
 
 /**
  * Assessment for checking the keyword matches in the meta description.

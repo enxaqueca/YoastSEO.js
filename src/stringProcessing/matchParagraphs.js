@@ -1,7 +1,7 @@
-import map from 'lodash/map';
-import flatMap from 'lodash/flatMap';
-import filter from 'lodash/filter';
-import { getBlocks } from '../helpers/html';
+import map from "lodash/map";
+import flatMap from "lodash/flatMap";
+import filter from "lodash/filter";
+import { getBlocks } from "../helpers/html";
 
 /**
  * Matches the paragraphs in <p>-tags and returns the text in them.
@@ -54,4 +54,4 @@ export default function( text ) {
 
 	// If no paragraphs are found, return an array containing the entire text.
 	return [ text ];
-};
+}

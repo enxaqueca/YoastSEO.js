@@ -1,7 +1,7 @@
-import isEmpty from 'lodash/isEmpty';
-import merge from 'lodash/merge';
-import AssessmentResult from '../../values/AssessmentResult.js';
-import Assessment from '../../assessment.js';
+import isEmpty from "lodash/isEmpty";
+import merge from "lodash/merge";
+import AssessmentResult from "../../values/AssessmentResult.js";
+import Assessment from "../../assessment.js";
 
 /**
  * Assessment for calculating the outbound links in the text.

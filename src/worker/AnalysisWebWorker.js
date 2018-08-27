@@ -1,13 +1,13 @@
 // External dependencies.
-import Jed from 'jed';
+import Jed from "jed";
 
-import forEach from 'lodash/forEach';
-import merge from 'lodash/merge';
-import pickBy from 'lodash/pickBy';
-import includes from 'lodash/includes';
-import isUndefined from 'lodash/isUndefined';
-import isString from 'lodash/isString';
-import isObject from 'lodash/isObject';
+import forEach from "lodash/forEach";
+import merge from "lodash/merge";
+import pickBy from "lodash/pickBy";
+import includes from "lodash/includes";
+import isUndefined from "lodash/isUndefined";
+import isString from "lodash/isString";
+import isObject from "lodash/isObject";
 
 // YoastSEO.js dependencies.
 import * as assessments from "../assessments";
@@ -18,16 +18,16 @@ import * as string from "../stringProcessing";
 import * as interpreters from "../interpreters";
 import * as config from "../config";
 
-import Assessor from '../assessor';
-import Assessment from '../assessment';
-import SEOAssessor from '../seoAssessor';
-import ContentAssessor from '../contentAssessor';
-import TaxonomyAssessor from '../taxonomyAssessor';
-import Pluggable from '../pluggable';
-import Researcher from '../researcher';
-import SnippetPreview from '../snippetPreview';
-import Paper from '../values/Paper';
-import AssessmentResult from '../values/AssessmentResult';
+import Assessor from "../assessor";
+import Assessment from "../assessment";
+import SEOAssessor from "../seoAssessor";
+import ContentAssessor from "../contentAssessor";
+import TaxonomyAssessor from "../taxonomyAssessor";
+import Pluggable from "../pluggable";
+import Researcher from "../researcher";
+import SnippetPreview from "../snippetPreview";
+import Paper from "../values/Paper";
+import AssessmentResult from "../values/AssessmentResult";
 
 const YoastSEO = {
 	Assessor,
@@ -51,9 +51,9 @@ const YoastSEO = {
 	config,
 };
 
-import CornerstoneContentAssessor from '../cornerstone/contentAssessor';
-import CornerstoneSEOAssessor from '../cornerstone/seoAssessor';
-import InvalidTypeError from '../errors/invalidType';
+import CornerstoneContentAssessor from "../cornerstone/contentAssessor";
+import CornerstoneSEOAssessor from "../cornerstone/seoAssessor";
+import InvalidTypeError from "../errors/invalidType";
 
 // Internal dependencies.
 import Scheduler from "./scheduler";

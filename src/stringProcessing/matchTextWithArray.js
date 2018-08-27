@@ -1,10 +1,10 @@
 /** @module stringProcessing/matchTextWithArray */
 
-import stripSpaces from '../stringProcessing/stripSpaces.js';
+import stripSpaces from "../stringProcessing/stripSpaces.js";
 
-import removePunctuation from '../stringProcessing/removePunctuation.js';
-import matchTextWithWord from '../stringProcessing/matchTextWithWord';
-import unique from 'lodash/uniq';
+import removePunctuation from "../stringProcessing/removePunctuation.js";
+import matchTextWithWord from "../stringProcessing/matchTextWithWord";
+import unique from "lodash/uniq";
 
 /**
  * Matches strings from an array against a given text.
@@ -36,4 +36,4 @@ export default function( text, array, locale = "en_EN" ) {
 		count: count,
 		matches: matches,
 	};
-};
+}

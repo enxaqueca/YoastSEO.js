@@ -1,9 +1,9 @@
 /** @module analyses/getLinkStatistics */
 
-import getAnchors from '../stringProcessing/getAnchorsFromText.js';
+import getAnchors from "../stringProcessing/getAnchorsFromText.js";
 
-import map from 'lodash/map';
-import url from '../stringProcessing/url.js';
+import map from "lodash/map";
+import url from "../stringProcessing/url.js";
 
 /**
  * Checks a text for anchors and returns the number found.
@@ -15,4 +15,4 @@ export default function( paper ) {
 	let anchors = getAnchors( paper.getText() );
 
 	return map( anchors, url.getFromAnchorTag );
-};
+}

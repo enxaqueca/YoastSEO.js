@@ -1,21 +1,21 @@
-import isEmpty from 'lodash/isEmpty';
-import isElement from 'lodash/isElement';
-import isUndefined from 'lodash/isUndefined';
-import clone from 'lodash/clone';
-import defaultsDeep from 'lodash/defaultsDeep';
-import forEach from 'lodash/forEach';
-import debounce from 'lodash/debounce';
-import createWordRegex from './stringProcessing/createWordRegex.js';
-import { stripFullTags as stripHTMLTags } from './stringProcessing/stripHTMLTags.js';
-import stripSpaces from './stringProcessing/stripSpaces.js';
-import replaceDiacritics from './stringProcessing/replaceDiacritics.js';
-import transliterate from './stringProcessing/transliterate.js';
-import templates from './templates.js';
+import isEmpty from "lodash/isEmpty";
+import isElement from "lodash/isElement";
+import isUndefined from "lodash/isUndefined";
+import clone from "lodash/clone";
+import defaultsDeep from "lodash/defaultsDeep";
+import forEach from "lodash/forEach";
+import debounce from "lodash/debounce";
+import createWordRegex from "./stringProcessing/createWordRegex.js";
+import { stripFullTags as stripHTMLTags } from "./stringProcessing/stripHTMLTags.js";
+import stripSpaces from "./stringProcessing/stripSpaces.js";
+import replaceDiacritics from "./stringProcessing/replaceDiacritics.js";
+import transliterate from "./stringProcessing/transliterate.js";
+import templates from "./templates.js";
 var snippetEditorTemplate = templates.snippetEditor;
 var hiddenElement = templates.hiddenSpan;
 
-import SnippetPreviewToggler from './snippetPreviewToggler';
-import domManipulation from './helpers/domManipulation.js';
+import SnippetPreviewToggler from "./snippetPreviewToggler";
+import domManipulation from "./helpers/domManipulation.js";
 
 import Config from "./config/config";
 

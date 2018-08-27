@@ -1,14 +1,14 @@
-import AssessmentResult from '../../values/AssessmentResult.js';
-import Assessment from '../../assessment.js';
-import isTextTooLong from '../../helpers/isValueTooLong';
-import { getSubheadings } from '../../stringProcessing/getSubheadings.js';
-import getWords from '../../stringProcessing/getWords.js';
-import filter from 'lodash/filter';
-import map from 'lodash/map';
-import merge from 'lodash/merge';
-import Mark from '../../values/Mark.js';
-import marker from '../../markers/addMark.js';
-import { inRangeEndInclusive as inRange } from '../../helpers/inRange.js';
+import AssessmentResult from "../../values/AssessmentResult.js";
+import Assessment from "../../assessment.js";
+import isTextTooLong from "../../helpers/isValueTooLong";
+import { getSubheadings } from "../../stringProcessing/getSubheadings.js";
+import getWords from "../../stringProcessing/getWords.js";
+import filter from "lodash/filter";
+import map from "lodash/map";
+import merge from "lodash/merge";
+import Mark from "../../values/Mark.js";
+import marker from "../../markers/addMark.js";
+import { inRangeEndInclusive as inRange } from "../../helpers/inRange.js";
 
 /**
  * Represents the assessment for calculating the text after each subheading.

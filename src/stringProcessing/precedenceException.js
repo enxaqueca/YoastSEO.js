@@ -1,6 +1,6 @@
-import getWordIndices from '../researches/passiveVoice/periphrastic/getIndicesWithRegex.js';
-import precedesIndex from './precedesIndex';
-import arrayToRegex from './createRegexFromArray.js';
+import getWordIndices from "../researches/passiveVoice/periphrastic/getIndicesWithRegex.js";
+import precedesIndex from "./precedesIndex";
+import arrayToRegex from "./createRegexFromArray.js";
 var cannotBeBetweenAuxiliaryAndParticipleFrench = require( "../researches/french/functionWords.js" )().cannotBeBetweenPassiveAuxiliaryAndParticiple;
 var cannotBeBetweenAuxiliaryAndParticipleEnglish = require( "../researches/english/functionWords.js" )().cannotBeBetweenPassiveAuxiliaryAndParticiple;
 var cannotBeBetweenAuxiliaryAndParticipleSpanish = require( "../researches/spanish/functionWords.js" )().cannotBeBetweenPassiveAuxiliaryAndParticiple;
@@ -38,4 +38,4 @@ export default function( sentencePart, participleIndex, language ) {
 
 	var precedenceExceptionMatch = getWordIndices( sentencePart, precedenceExceptionRegex );
 	return precedesIndex( precedenceExceptionMatch, participleIndex );
-};
+}

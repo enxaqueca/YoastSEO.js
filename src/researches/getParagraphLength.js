@@ -1,6 +1,6 @@
-import countWords from '../stringProcessing/countWords.js';
-import matchParagraphs from '../stringProcessing/matchParagraphs.js';
-import filter from 'lodash/filter';
+import countWords from "../stringProcessing/countWords.js";
+import matchParagraphs from "../stringProcessing/matchParagraphs.js";
+import filter from "lodash/filter";
 
 /**
  * Gets all paragraphs and their word counts from the text.
@@ -22,4 +22,4 @@ export default function( paper ) {
 	return filter( paragraphsLength, function( paragraphLength ) {
 		return ( paragraphLength.wordCount > 0 );
 	} );
-};
+}
