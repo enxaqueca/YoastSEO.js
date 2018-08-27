@@ -1,5 +1,5 @@
-import getLinks from '../../js/researches/getLinks';
-import Paper from '../../js/values/Paper.js';
+import getLinks from "../../js/researches/getLinks";
+import Paper from "../../js/values/Paper.js";
 
 describe( "A test for getting the links from a text", function() {
 	it( "returns all links from the text", function() {

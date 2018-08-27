@@ -1,4 +1,4 @@
-import SpanishSentencePart from '../../../../js/researches/spanish/passiveVoice/SentencePart.js';
+import SpanishSentencePart from "../../../../js/researches/spanish/passiveVoice/SentencePart.js";
 
 describe( "creates a Spanish sentence part", function() {
 	it( "makes sure the Spanish sentence part inherits all functions", function() {

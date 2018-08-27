@@ -1,4 +1,4 @@
-import html from '../../js/helpers/html';
+import html from "../../js/helpers/html";
 
 var blockElements = html.blockElements;
 var inlineElements = html.inlineElements;

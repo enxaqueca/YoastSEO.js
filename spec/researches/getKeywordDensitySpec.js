@@ -1,8 +1,8 @@
 /* global describe it expect */
-import getKeywordDensity from '../../js/researches/getKeywordDensity.js';
+import getKeywordDensity from "../../js/researches/getKeywordDensity.js";
 
-import Paper from '../../js/values/Paper.js';
-import Researcher from '../../js/researcher';
+import Paper from "../../js/values/Paper.js";
+import Researcher from "../../js/researcher";
 
 describe( "Test for counting the keyword density in a text", function() {
 	it( "returns keyword density", function() {

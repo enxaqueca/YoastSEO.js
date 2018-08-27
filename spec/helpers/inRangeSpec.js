@@ -1,6 +1,6 @@
-import { inRange } from '../../js/helpers/inRange.js';
-import { inRangeStartInclusive } from '../../js/helpers/inRange.js';
-import { inRangeEndInclusive } from '../../js/helpers/inRange.js';
+import { inRange } from "../../js/helpers/inRange.js";
+import { inRangeStartInclusive } from "../../js/helpers/inRange.js";
+import { inRangeEndInclusive } from "../../js/helpers/inRange.js";
 
 describe( "Checks whether a value is in range", function() {
 	it( "returns true, the value is in range", function() {

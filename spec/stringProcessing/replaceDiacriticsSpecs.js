@@ -1,4 +1,4 @@
-import diacritics from '../../js/stringProcessing/replaceDiacritics.js';
+import diacritics from "../../js/stringProcessing/replaceDiacritics.js";
 
 describe( "a test removing diacritics from text", function() {
 	it( "returns string without diacritics.", function() {

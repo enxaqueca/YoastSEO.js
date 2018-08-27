@@ -1,5 +1,5 @@
-import transitionWordsResearch from '../../js/researches/findTransitionWords.js';
-import Paper from '../../js/values/Paper.js';
+import transitionWordsResearch from "../../js/researches/findTransitionWords.js";
+import Paper from "../../js/values/Paper.js";
 
 describe( "a test for finding transition words from a string", function() {
 	let mockPaper, result;

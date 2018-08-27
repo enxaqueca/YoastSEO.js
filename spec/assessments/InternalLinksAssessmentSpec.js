@@ -1,7 +1,7 @@
 import InternalLinksAssessment from "../../js/assessments/seo/InternalLinksAssessment";
 
-import Paper from '../../js/values/Paper.js';
-import factory from '../helpers/factory.js';
+import Paper from "../../js/values/Paper.js";
+import factory from "../helpers/factory.js";
 const i18n = factory.buildJed();
 
 describe( "An assessor running the linkStatistics for internal links", function() {

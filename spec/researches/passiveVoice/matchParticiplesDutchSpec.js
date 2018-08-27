@@ -1,4 +1,4 @@
-import matchParticiplesFactory from '../../../js/researches/passiveVoice/periphrastic/matchParticiples';
+import matchParticiplesFactory from "../../../js/researches/passiveVoice/periphrastic/matchParticiples";
 const matchParticiples = matchParticiplesFactory();
 
 describe( "a test for matching regular participles", function() {

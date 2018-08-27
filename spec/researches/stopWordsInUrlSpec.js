@@ -1,5 +1,5 @@
-import urlStopwords from '../../js/researches/stopWordsInUrl.js';
-import Paper from '../../js/values/Paper.js';
+import urlStopwords from "../../js/researches/stopWordsInUrl.js";
+import Paper from "../../js/values/Paper.js";
 
 describe( "Checks the URL for stopwords", function() {
 	it( "returns any stopwords found", function() {

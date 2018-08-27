@@ -1,5 +1,5 @@
 /* eslint-disable no-irregular-whitespace */
-import createWordRegex from '../../js/stringProcessing/createWordRegex.js';
+import createWordRegex from "../../js/stringProcessing/createWordRegex.js";
 
 describe( "creates regex from keyword", function() {
 	it( "returns a regex", function() {

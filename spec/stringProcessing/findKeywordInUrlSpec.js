@@ -1,4 +1,4 @@
-import findKeywordInUrl from '../../js/stringProcessing/findKeywordInUrl';
+import findKeywordInUrl from "../../js/stringProcessing/findKeywordInUrl";
 
 describe( "findKeywordInUrl", function() {
 	it( "returns false when passed no anchor tag", function() {

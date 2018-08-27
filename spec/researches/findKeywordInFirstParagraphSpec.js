@@ -1,5 +1,5 @@
-import firstParagraph from '../../js/researches/findKeywordInFirstParagraph.js';
-import Paper from '../../js/values/Paper.js';
+import firstParagraph from "../../js/researches/findKeywordInFirstParagraph.js";
+import Paper from "../../js/values/Paper.js";
 
 
 describe( "checks for the keyword in the first paragraph", function() {

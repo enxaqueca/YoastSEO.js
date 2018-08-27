@@ -1,8 +1,8 @@
 import LargestKeyWordDistanceAssessment from "../../js/assessments/seo/LargestKeywordDistanceAssessment.js";
-import Paper from '../../js/values/Paper.js';
-import Factory from '../helpers/factory.js';
+import Paper from "../../js/values/Paper.js";
+import Factory from "../helpers/factory.js";
 const i18n = Factory.buildJed();
-import Mark from '../../js/values/Mark.js';
+import Mark from "../../js/values/Mark.js";
 
 let keywordDistanceAssessment = new LargestKeyWordDistanceAssessment();
 

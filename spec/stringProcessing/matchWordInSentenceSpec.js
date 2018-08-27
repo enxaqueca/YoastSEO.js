@@ -1,4 +1,4 @@
-import matchWordInSentence from '../../js/stringProcessing/matchWordInSentence';
+import matchWordInSentence from "../../js/stringProcessing/matchWordInSentence";
 let characterInBoundary = matchWordInSentence.characterInBoundary;
 let isWordInSentence = matchWordInSentence.isWordInSentence;
 

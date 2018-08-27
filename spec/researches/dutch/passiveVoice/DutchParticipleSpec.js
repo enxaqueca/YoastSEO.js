@@ -1,5 +1,5 @@
-import DutchParticiple from '../../../../js/researches/dutch/passiveVoice/DutchParticiple.js';
-import checkException from '../../../../js/researches/passiveVoice/periphrastic/checkException.js';
+import DutchParticiple from "../../../../js/researches/dutch/passiveVoice/DutchParticiple.js";
+import checkException from "../../../../js/researches/passiveVoice/periphrastic/checkException.js";
 
 describe( "A test for checking the Dutch participle", function() {
 	it( "checks the properties of the Dutch participle object with a passive", function() {

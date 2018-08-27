@@ -1,7 +1,7 @@
-import Pluggable from '../js/pluggable';
-import InvalidTypeError from '../js/errors/invalidType';
-import Assessor from '../js/assessor.js';
-import factory from './helpers/factory.js';
+import Pluggable from "../js/pluggable";
+import InvalidTypeError from "../js/errors/invalidType";
+import Assessor from "../js/assessor.js";
+import factory from "./helpers/factory.js";
 var i18n = factory.buildJed();
 
 describe( "the pluggable interface", function() {

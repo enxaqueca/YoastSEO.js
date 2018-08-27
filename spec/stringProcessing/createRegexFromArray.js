@@ -1,4 +1,4 @@
-import arrayToRegex from '../../js/stringProcessing/createRegexFromArray.js';
+import arrayToRegex from "../../js/stringProcessing/createRegexFromArray.js";
 
 describe( "a test creating a regex from an array with strings", function() {
 	it( "adds start and end boundaries", function() {

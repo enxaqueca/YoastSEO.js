@@ -1,5 +1,5 @@
-import fleschFunction from '../../js/researches/calculateFleschReading.js';
-import Paper from '../../js/values/Paper.js';
+import fleschFunction from "../../js/researches/calculateFleschReading.js";
+import Paper from "../../js/values/Paper.js";
 
 describe( "a test to calculate the fleschReading score", function() {
 	it( "returns a score", function() {

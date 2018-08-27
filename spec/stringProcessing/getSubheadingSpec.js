@@ -1,5 +1,5 @@
-import { getSubheadingContents } from '../../js/stringProcessing/getSubheadings.js';
-import { getSubheadings } from '../../js/stringProcessing/getSubheadings.js';
+import { getSubheadingContents } from "../../js/stringProcessing/getSubheadings.js";
+import { getSubheadings } from "../../js/stringProcessing/getSubheadings.js";
 
 describe( "A test for getting subheadings", function() {
 	it( "returns subheadings", function() {

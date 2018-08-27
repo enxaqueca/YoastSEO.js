@@ -1,5 +1,5 @@
-import passiveVoice from '../../js/researches/getPassiveVoice.js';
-import Paper from '../../js/values/Paper.js';
+import passiveVoice from "../../js/researches/getPassiveVoice.js";
+import Paper from "../../js/values/Paper.js";
 
 describe( "detecting passive voice in sentences", function() {
 	it( "returns active voice (présent)", function() {

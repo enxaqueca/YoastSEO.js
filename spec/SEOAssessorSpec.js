@@ -1,6 +1,6 @@
-import Assessor from '../js/seoAssessor.js';
-import Paper from '../js/values/Paper.js';
-import factory from './helpers/factory.js';
+import Assessor from "../js/seoAssessor.js";
+import Paper from "../js/values/Paper.js";
+import factory from "./helpers/factory.js";
 var i18n = factory.buildJed();
 
 var assessor = new Assessor( i18n );

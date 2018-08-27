@@ -1,5 +1,5 @@
-import getSentences from '../../js/stringProcessing/getSentences.js';
-import forEach from 'lodash/forEach';
+import getSentences from "../../js/stringProcessing/getSentences.js";
+import forEach from "lodash/forEach";
 
 /**
  * Helper to test sentence detection.

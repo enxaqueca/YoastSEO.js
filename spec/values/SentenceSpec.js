@@ -1,4 +1,4 @@
-import Sentence from '../../js/values/Sentence.js';
+import Sentence from "../../js/values/Sentence.js";
 
 describe( "Creates a sentence object", function() {
 	it( "returns an object containing a text", function() {

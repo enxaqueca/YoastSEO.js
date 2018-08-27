@@ -1,6 +1,6 @@
-import { normalizeSingle as normalizeSingleQuotes } from '../../js/stringProcessing/quotes';
-import { normalizeDouble as normalizeDoubleQuotes } from '../../js/stringProcessing/quotes';
-import { normalize } from '../../js/stringProcessing/quotes';
+import { normalizeSingle as normalizeSingleQuotes } from "../../js/stringProcessing/quotes";
+import { normalizeDouble as normalizeDoubleQuotes } from "../../js/stringProcessing/quotes";
+import { normalize } from "../../js/stringProcessing/quotes";
 
 describe( "a quote helper", function() {
 	describe( "normalizeSingle", function() {

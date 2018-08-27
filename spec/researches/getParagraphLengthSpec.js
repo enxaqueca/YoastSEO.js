@@ -1,5 +1,5 @@
-import getParagraphLength from '../../js/researches/getParagraphLength.js';
-import Paper from '../../js/values/Paper.js';
+import getParagraphLength from "../../js/researches/getParagraphLength.js";
+import Paper from "../../js/values/Paper.js";
 
 
 describe( "a test for getting paragraph length", function() {

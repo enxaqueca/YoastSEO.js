@@ -1,5 +1,5 @@
-import WordCombination from '../../js/values/WordCombination';
-import relevantWords from '../../js/stringProcessing/relevantWords';
+import WordCombination from "../../js/values/WordCombination";
+import relevantWords from "../../js/stringProcessing/relevantWords";
 let getWordCombinations = relevantWords.getWordCombinations;
 let getRelevantWords = relevantWords.getRelevantWords;
 let calculateOccurrences = relevantWords.calculateOccurrences;

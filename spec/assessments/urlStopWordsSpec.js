@@ -1,6 +1,6 @@
-import stopWordsInUrlAssessment from '../../js/assessments/seo/urlStopWordsAssessment.js';
-import Paper from '../../js/values/Paper.js';
-import Factory from '../helpers/factory.js';
+import stopWordsInUrlAssessment from "../../js/assessments/seo/urlStopWordsAssessment.js";
+import Paper from "../../js/values/Paper.js";
+import Factory from "../helpers/factory.js";
 var i18n = Factory.buildJed();
 
 describe( "A stop word in url assessment", function() {

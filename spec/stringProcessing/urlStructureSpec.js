@@ -1,4 +1,4 @@
-import UrlStructure from '../../js/stringProcessing/urlStructure';
+import UrlStructure from "../../js/stringProcessing/urlStructure";
 
 describe( "UrlStructure", () => {
 	it( "accepts a url structure", () => {

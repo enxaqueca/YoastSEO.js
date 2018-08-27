@@ -1,5 +1,5 @@
-import metaDescriptionLength from '../../js/researches/metaDescriptionLength.js';
-import Paper from '../../js/values/Paper.js';
+import metaDescriptionLength from "../../js/researches/metaDescriptionLength.js";
+import Paper from "../../js/values/Paper.js";
 
 describe( "the metadescription length research", function() {
 	it( "returns the length (25) of the description", function() {

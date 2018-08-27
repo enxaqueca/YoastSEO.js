@@ -1,4 +1,4 @@
-import domManipulation from '../../js/helpers/domManipulation.js';
+import domManipulation from "../../js/helpers/domManipulation.js";
 
 var hasClass = domManipulation.hasClass;
 var addClass = domManipulation.addClass;

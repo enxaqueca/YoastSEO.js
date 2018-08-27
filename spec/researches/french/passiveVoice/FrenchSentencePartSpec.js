@@ -1,4 +1,4 @@
-import FrenchSentencePart from '../../../../js/researches/french/passiveVoice/SentencePart.js';
+import FrenchSentencePart from "../../../../js/researches/french/passiveVoice/SentencePart.js";
 
 describe( "creates a French sentence part", function() {
 	it( "makes sure the French sentence part inherits all functions", function() {

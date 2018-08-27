@@ -1,5 +1,5 @@
-import getSentences from '../../js/researches/countSentencesFromDescription.js';
-import Paper from '../../js/values/Paper';
+import getSentences from "../../js/researches/countSentencesFromDescription.js";
+import Paper from "../../js/values/Paper";
 
 describe( "counts words in sentences from text", function() {
 	it( "returns sentences with question mark", function() {

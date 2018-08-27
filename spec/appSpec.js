@@ -1,6 +1,6 @@
-import MissingArgument from '../js/errors/missingArgument.js';
-import SnippetPreview from '../js/snippetPreview.js';
-import App from '../js/app.js';
+import MissingArgument from "../js/errors/missingArgument.js";
+import SnippetPreview from "../js/snippetPreview.js";
+import App from "../js/app.js";
 
 // Mock these function to prevent us from needing an actual DOM in the tests.
 App.prototype.createSnippetPreview = function() {};

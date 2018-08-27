@@ -1,4 +1,4 @@
-import transliteration from '../../js/stringProcessing/transliterate.js';
+import transliteration from "../../js/stringProcessing/transliterate.js";
 
 describe( "a test removing special characters from text", function() {
 	it( "returns a Spanish string without special characters.", function() {

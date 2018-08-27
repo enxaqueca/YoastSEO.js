@@ -1,6 +1,6 @@
-import MetaDescriptionLengthAssessment from '../../js/assessments/seo/metaDescriptionLengthAssessment.js';
-import Paper from '../../js/values/Paper.js';
-import Factory from '../helpers/factory.js';
+import MetaDescriptionLengthAssessment from "../../js/assessments/seo/metaDescriptionLengthAssessment.js";
+import Paper from "../../js/values/Paper.js";
+import Factory from "../helpers/factory.js";
 var i18n = Factory.buildJed();
 
 let descriptionLengthAssessment = new MetaDescriptionLengthAssessment();

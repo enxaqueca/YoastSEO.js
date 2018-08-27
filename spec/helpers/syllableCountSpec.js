@@ -1,4 +1,4 @@
-import LanguageSyllableRegex from '../../js/helpers/syllableCountStep.js';
+import LanguageSyllableRegex from "../../js/helpers/syllableCountStep.js";
 
 describe( "A test for creating a language syllable regex", function() {
 	it( "creates an empty language syllable regex", function() {

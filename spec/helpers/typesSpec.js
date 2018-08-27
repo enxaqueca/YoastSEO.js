@@ -1,4 +1,4 @@
-import types from '../../js/helpers/types';
+import types from "../../js/helpers/types";
 
 var getType = types.getType;
 

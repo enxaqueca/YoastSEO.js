@@ -1,5 +1,5 @@
-import SpanishParticiple from '../../../../js/researches/spanish/passiveVoice/SpanishParticiple.js';
-import checkException from '../../../../js/researches/passiveVoice/periphrastic/checkException.js';
+import SpanishParticiple from "../../../../js/researches/spanish/passiveVoice/SpanishParticiple.js";
+import checkException from "../../../../js/researches/passiveVoice/periphrastic/checkException.js";
 
 describe( "A test for checking the Spanish participle", function() {
 	it( "checks the properties of the Spanish participle object with a passive", function() {

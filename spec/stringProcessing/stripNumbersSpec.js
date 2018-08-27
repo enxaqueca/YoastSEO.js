@@ -1,4 +1,4 @@
-import stripNumbers from '../../js/stringProcessing/stripNumbers.js';
+import stripNumbers from "../../js/stringProcessing/stripNumbers.js";
 
 describe( "function to remove words with only numbers", function() {
 	it( "returns a string with only numberonly words removed", function() {

@@ -1,5 +1,5 @@
-import metaDescriptionKeyword from '../../js/researches/metaDescriptionKeyword.js';
-import Paper from '../../js/values/Paper.js';
+import metaDescriptionKeyword from "../../js/researches/metaDescriptionKeyword.js";
+import Paper from "../../js/values/Paper.js";
 
 describe( "the metadescription keyword match research", function() {
 	it( "returns the number ( 1 ) of keywords found", function() {

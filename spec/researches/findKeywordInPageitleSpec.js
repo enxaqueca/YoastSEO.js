@@ -1,5 +1,5 @@
-import pageTitleKeyword from '../../js/researches/findKeywordInPageTitle.js';
-import Paper from '../../js/values/Paper.js';
+import pageTitleKeyword from "../../js/researches/findKeywordInPageTitle.js";
+import Paper from "../../js/values/Paper.js";
 var result;
 
 describe( "Match keywords in string", function() {

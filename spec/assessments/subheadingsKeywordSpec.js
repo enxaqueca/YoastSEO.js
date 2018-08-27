@@ -1,6 +1,6 @@
-import SubheadingsKeywordAssessment from '../../js/assessments/seo/subheadingsKeywordAssessment.js';
-import Paper from '../../js/values/Paper.js';
-import Factory from '../helpers/factory.js';
+import SubheadingsKeywordAssessment from "../../js/assessments/seo/subheadingsKeywordAssessment.js";
+import Paper from "../../js/values/Paper.js";
+import Factory from "../helpers/factory.js";
 var i18n = Factory.buildJed();
 
 let matchKeywordAssessment = new SubheadingsKeywordAssessment();

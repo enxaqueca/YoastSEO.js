@@ -1,4 +1,4 @@
-import linkTypeFunction from '../../js/stringProcessing/getLinkType.js';
+import linkTypeFunction from "../../js/stringProcessing/getLinkType.js";
 
 describe( "getLinkType", function() {
 	it( "should classify relative links as internal", function() {

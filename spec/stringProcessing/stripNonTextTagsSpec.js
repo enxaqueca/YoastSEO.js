@@ -1,4 +1,4 @@
-import stripSomeTags from '../../js/stringProcessing/stripNonTextTags.js';
+import stripSomeTags from "../../js/stringProcessing/stripNonTextTags.js";
 
 describe( "a test for removing the tags from a given text", function() {
 	it( "returns a text without tags, except h1-6, li, dd and p", function() {

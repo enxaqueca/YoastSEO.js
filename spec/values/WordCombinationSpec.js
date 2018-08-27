@@ -1,4 +1,4 @@
-import WordCombination from '../../js/values/WordCombination';
+import WordCombination from "../../js/values/WordCombination";
 var functionWords = require( "../../js/researches/english/functionWords.js" )().all;
 
 describe( "WordCombination", function() {

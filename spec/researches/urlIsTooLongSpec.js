@@ -1,5 +1,5 @@
-import urlIsTooLong from '../../js/researches/urlIsTooLong.js';
-import Paper from '../../js/values/Paper.js';
+import urlIsTooLong from "../../js/researches/urlIsTooLong.js";
+import Paper from "../../js/values/Paper.js";
 
 describe( "Checks length of Url", function() {
 	it( "is too long", function() {

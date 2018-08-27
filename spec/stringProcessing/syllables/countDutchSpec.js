@@ -1,5 +1,5 @@
-import countSyllableFunction from '../../../js/stringProcessing/syllables/count.js';
-import forEach from 'lodash/forEach';
+import countSyllableFunction from "../../../js/stringProcessing/syllables/count.js";
+import forEach from "lodash/forEach";
 
 /**
  * Helper to tests syllable count.

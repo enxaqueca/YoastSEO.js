@@ -1,5 +1,5 @@
-import wordComplexity from '../../js/researches/getWordComplexity.js';
-import Paper from '../../js/values/Paper';
+import wordComplexity from "../../js/researches/getWordComplexity.js";
+import Paper from "../../js/values/Paper";
 
 describe( "A function for getting the syllables per word",  function() {
 	it( "returns an array with the number of syllables per word", function() {

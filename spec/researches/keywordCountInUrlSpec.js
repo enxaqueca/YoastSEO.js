@@ -1,5 +1,5 @@
-import urlKeyword from '../../js/researches/keywordCountInUrl.js';
-import Paper from '../../js/values/Paper.js';
+import urlKeyword from "../../js/researches/keywordCountInUrl.js";
+import Paper from "../../js/values/Paper.js";
 
 describe( "test to check url for keyword", function() {
 	it( "returns matches", function() {
