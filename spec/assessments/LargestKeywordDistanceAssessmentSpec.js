@@ -1,8 +1,8 @@
 import LargestKeyWordDistanceAssessment from "../../js/assessments/seo/LargestKeywordDistanceAssessment.js";
-const Paper = require( "../../js/values/Paper.js" );
-const Factory = require( "../helpers/factory.js" );
+import Paper from '../../js/values/Paper.js';
+import Factory from '../helpers/factory.js';
 const i18n = Factory.buildJed();
-const Mark = require( "../../js/values/Mark.js" );
+import Mark from '../../js/values/Mark.js';
 
 let keywordDistanceAssessment = new LargestKeyWordDistanceAssessment();
 

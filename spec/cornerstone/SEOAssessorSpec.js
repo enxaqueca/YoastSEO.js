@@ -1,6 +1,6 @@
-let Assessor = require( "../../js/cornerstone/seoAssessor.js" );
-let Paper = require( "../../js/values/Paper.js" );
-let factory = require( "../helpers/factory.js" );
+import Assessor from '../../js/cornerstone/seoAssessor.js';
+import Paper from '../../js/values/Paper.js';
+import factory from '../helpers/factory.js';
 let i18n = factory.buildJed();
 let assessor = new Assessor( i18n );
 

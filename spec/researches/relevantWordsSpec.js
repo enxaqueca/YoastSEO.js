@@ -1,6 +1,6 @@
-let relevantWordsResearch = require( "../../js/researches/relevantWords" );
-let Paper = require( "../../js/values/Paper" );
-let WordCombination = require( "../../js/values/WordCombination" );
+import relevantWordsResearch from '../../js/researches/relevantWords';
+import Paper from '../../js/values/Paper';
+import WordCombination from '../../js/values/WordCombination';
 let functionWords = require( "../../js/researches/english/functionWords.js" )().all;
 
 describe( "relevantWords research", function() {

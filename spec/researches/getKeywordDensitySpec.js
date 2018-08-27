@@ -1,7 +1,8 @@
 /* global describe it expect */
-const getKeywordDensity = require( "../../js/researches/getKeywordDensity.js" );
-const Paper = require( "../../js/values/Paper.js" );
-const Researcher = require( "../../js/researcher" );
+import getKeywordDensity from '../../js/researches/getKeywordDensity.js';
+
+import Paper from '../../js/values/Paper.js';
+import Researcher from '../../js/researcher';
 
 describe( "Test for counting the keyword density in a text", function() {
 	it( "returns keyword density", function() {

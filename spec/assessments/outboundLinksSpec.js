@@ -1,7 +1,6 @@
-let OutboundLinksAssessment = require( "../../js/assessments/seo/outboundLinksAssessment.js" );
-var Paper = require( "../../js/values/Paper.js" );
-
-var factory = require( "../helpers/factory.js" );
+import OutboundLinksAssessment from '../../js/assessments/seo/outboundLinksAssessment.js';
+import Paper from '../../js/values/Paper.js';
+import factory from '../helpers/factory.js';
 var i18n = factory.buildJed();
 
 let linkStatisticAssessment = new OutboundLinksAssessment();

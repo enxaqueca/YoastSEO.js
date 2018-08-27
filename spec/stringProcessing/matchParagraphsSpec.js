@@ -1,4 +1,4 @@
-var matchParagraphs = require( "../../js/stringProcessing/matchParagraphs.js" );
+import matchParagraphs from '../../js/stringProcessing/matchParagraphs.js';
 
 describe( "Matches paragraphs in a text", function() {
 	it( "returns an array of paragraphs in <p>tags", function() {

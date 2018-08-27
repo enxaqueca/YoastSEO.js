@@ -1,6 +1,6 @@
 import IntroductionKeywordAssessment from "../../js/assessments/seo/IntroductionKeywordAssessment";
-const Paper = require( "../../js/values/Paper" );
-const Factory = require( "../helpers/factory" );
+import Paper from '../../js/values/Paper';
+import Factory from '../helpers/factory';
 
 const i18n = Factory.buildJed();
 

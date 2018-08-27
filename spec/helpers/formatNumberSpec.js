@@ -1,4 +1,4 @@
-var formatNumberSpec = require( "../../js/helpers/formatNumber.js" );
+import formatNumberSpec from '../../js/helpers/formatNumber.js';
 
 describe( "a test to round numbers to two decimal places", function() {
 	it( "returns a rounded number", function() {

@@ -1,4 +1,4 @@
-var subheadingsMatch = require( "../../js/stringProcessing/subheadingsMatch" );
+import subheadingsMatch from '../../js/stringProcessing/subheadingsMatch';
 
 describe( "subheadingsMatch", function() {
 	it( "should return -1 when match is null", function() {

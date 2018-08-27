@@ -1,4 +1,4 @@
-var showTrace = require( "../../js/helpers/errors" ).showTrace;
+import { showTrace } from '../../js/helpers/errors';
 
 describe( "showTrace", function() {
 	beforeEach( function() {

@@ -1,4 +1,4 @@
-var Paper = require( "../../js/values/Paper.js" );
+import Paper from '../../js/values/Paper.js';
 
 describe( "Paper", function() {
 	describe( "Creating an Paper", function() {

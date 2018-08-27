@@ -1,6 +1,6 @@
-var stopWordsInKeywordAssessment = require( "../../js/assessments/seo/keywordStopWordsAssessment.js" );
-var Paper = require( "../../js/values/Paper.js" );
-var Factory = require( "../helpers/factory.js" );
+import stopWordsInKeywordAssessment from '../../js/assessments/seo/keywordStopWordsAssessment.js';
+import Paper from '../../js/values/Paper.js';
+import Factory from '../helpers/factory.js';
 var i18n = Factory.buildJed();
 
 describe( "A stop word in keyword assessment", function() {

@@ -1,5 +1,5 @@
-var getSentences = require( "../../js/researches/countSentencesFromText.js" );
-var Paper = require( "../../js/values/Paper" );
+import getSentences from '../../js/researches/countSentencesFromText.js';
+import Paper from '../../js/values/Paper';
 
 describe( "counts words in sentences from text", function() {
 	let paper;

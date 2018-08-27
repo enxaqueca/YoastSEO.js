@@ -1,8 +1,8 @@
-let ContentAssessor = require( "../../js/cornerstone/contentAssessor.js" );
-let AssessmentResult = require( "../../js/values/AssessmentResult.js" );
-let Factory = require( "../helpers/factory.js" );
-let Paper = require( "../../js/values/Paper.js" );
-let forEach = require( "lodash/forEach" );
+import ContentAssessor from '../../js/cornerstone/contentAssessor.js';
+import AssessmentResult from '../../js/values/AssessmentResult.js';
+import Factory from '../helpers/factory.js';
+import Paper from '../../js/values/Paper.js';
+import forEach from 'lodash/forEach';
 let i18n = Factory.buildJed();
 
 describe( "A content assessor", function() {

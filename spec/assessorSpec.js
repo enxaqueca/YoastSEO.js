@@ -1,9 +1,8 @@
-var Assessor = require( "../js/assessor.js" );
-var Paper = require( "../js/values/Paper.js" );
-var AssessmentResult = require( "../js/values/AssessmentResult.js" );
-var MissingArgument = require( "../js/errors/missingArgument" );
-
-var factory = require( "./helpers/factory.js" );
+import Assessor from '../js/assessor.js';
+import Paper from '../js/values/Paper.js';
+import AssessmentResult from '../js/values/AssessmentResult.js';
+import MissingArgument from '../js/errors/missingArgument';
+import factory from './helpers/factory.js';
 var i18n = factory.buildJed();
 
 global.window = {};

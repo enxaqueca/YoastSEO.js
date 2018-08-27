@@ -1,9 +1,8 @@
-var ContentAssessor = require( "../js/contentAssessor.js" );
-var AssessmentResult = require( "../js/values/AssessmentResult.js" );
-var Factory = require( "./helpers/factory.js" );
-var Paper = require( "../js/values/Paper.js" );
-
-var forEach = require( "lodash/forEach" );
+import ContentAssessor from '../js/contentAssessor.js';
+import AssessmentResult from '../js/values/AssessmentResult.js';
+import Factory from './helpers/factory.js';
+import Paper from '../js/values/Paper.js';
+import forEach from 'lodash/forEach';
 
 var i18n = Factory.buildJed();
 

@@ -1,64 +1,65 @@
-const contentConfiguration = require( "../../js/config/content/combinedConfig" );
-const factory = require( "../helpers/factory.js" );
+import contentConfiguration from '../../js/config/content/combinedConfig';
+import factory from '../helpers/factory.js';
 const i18n = factory.buildJed();
 
 // Import SEO assessments
 import IntroductionKeywordAssessment from "../../js/assessments/seo/IntroductionKeywordAssessment";
 import KeyphraseLengthAssessment from "../../js/assessments/seo/KeyphraseLengthAssessment";
 import KeywordDensityAssessment from  "../../js/assessments/seo/KeywordDensityAssessment";
-const keywordStopWordsAssessment = require( "../../js/assessments/seo/keywordStopWordsAssessment" );
+import keywordStopWordsAssessment from '../../js/assessments/seo/keywordStopWordsAssessment';
 import MetaDescriptionKeywordAssessment from "../../js/assessments/seo/MetaDescriptionKeywordAssessment";
-const MetaDescriptionLengthAssessment = require( "../../js/assessments/seo/metaDescriptionLengthAssessment" );
-const SubheadingsKeywordAssessment = require( "../../js/assessments/seo/subheadingsKeywordAssessment" );
+import MetaDescriptionLengthAssessment from '../../js/assessments/seo/metaDescriptionLengthAssessment';
+import SubheadingsKeywordAssessment from '../../js/assessments/seo/subheadingsKeywordAssessment';
 import TextCompetingLinksAssessment from "../../js/assessments/seo/TextCompetingLinksAssessment";
-const TextImagesAssessment = require( "../../js/assessments/seo/textImagesAssessment" );
-const TextLengthAssessment = require( "../../js/assessments/seo/textLengthAssessment" );
-const OutboundLinksAssessment = require( "../../js/assessments/seo/outboundLinksAssessment" );
+import TextImagesAssessment from '../../js/assessments/seo/textImagesAssessment';
+import TextLengthAssessment from '../../js/assessments/seo/textLengthAssessment';
+import OutboundLinksAssessment from '../../js/assessments/seo/outboundLinksAssessment';
 import InternalLinksAssessment from "../../js/assessments/seo/InternalLinksAssessment";
 import TitleKeywordAssessment from "../../js/assessments/seo/TitleKeywordAssessment";
-const TitleWidthAssessment = require( "../../js/assessments/seo/pageTitleWidthAssessment" );
+import TitleWidthAssessment from '../../js/assessments/seo/pageTitleWidthAssessment';
 import UrlKeywordAssessment from "../../js/assessments/seo/UrlKeywordAssessment";
-const UrlLengthAssessment = require( "../../js/assessments/seo/urlLengthAssessment" );
-const urlStopWordsAssessment = require( "../../js/assessments/seo/urlStopWordsAssessment" );
+import UrlLengthAssessment from '../../js/assessments/seo/urlLengthAssessment';
+import urlStopWordsAssessment from '../../js/assessments/seo/urlStopWordsAssessment';
 import LargestKeywordDistanceAssessment from "../../js/assessments/seo/LargestKeywordDistanceAssessment";
 
 // Import content assessments
-const FleschReadingAssessment = require( "../../js/assessments/readability/fleschReadingEaseAssessment" );
-const SubheadingDistributionTooLongAssessment = require( "../../js/assessments/readability/subheadingDistributionTooLongAssessment" );
-const paragraphTooLongAssessment = require( "../../js/assessments/readability/paragraphTooLongAssessment" );
-const SentenceLengthInTextAssessment = require( "../../js/assessments/readability/sentenceLengthInTextAssessment" );
-const transitionWordsAssessment = require( "../../js/assessments/readability/transitionWordsAssessment" );
-const passiveVoiceAssessment = require( "../../js/assessments/readability/passiveVoiceAssessment" );
-const textPresenceAssessment = require( "../../js/assessments/readability/textPresenceAssessment" );
-const sentenceBeginningsAssessment = require( "../../js/assessments/readability/sentenceBeginningsAssessment" );
+import FleschReadingAssessment from '../../js/assessments/readability/fleschReadingEaseAssessment';
 
+import SubheadingDistributionTooLongAssessment from '../../js/assessments/readability/subheadingDistributionTooLongAssessment';
+import paragraphTooLongAssessment from '../../js/assessments/readability/paragraphTooLongAssessment';
+import SentenceLengthInTextAssessment from '../../js/assessments/readability/sentenceLengthInTextAssessment';
+import transitionWordsAssessment from '../../js/assessments/readability/transitionWordsAssessment';
+import passiveVoiceAssessment from '../../js/assessments/readability/passiveVoiceAssessment';
+import textPresenceAssessment from '../../js/assessments/readability/textPresenceAssessment';
+import sentenceBeginningsAssessment from '../../js/assessments/readability/sentenceBeginningsAssessment';
 
 // Import researches
-const findKeywordInFirstParagraph = require( "../../js/researches/findKeywordInFirstParagraph.js" );
-const keyphraseLength = require( "../../js/researches/keyphraseLength" );
-const keywordCount = require( "../../js/researches/keywordCount" );
-const getKeywordDensity = require( "../../js/researches/getKeywordDensity.js" );
-const stopWordsInKeyword = require( "../../js/researches/stopWordsInKeyword" );
-const metaDescriptionKeyword = require( "../../js/researches/metaDescriptionKeyword.js" );
-const metaDescriptionLength = require( "../../js/researches/metaDescriptionLength.js" );
-const matchKeywordInSubheadings = require( "../../js/researches/matchKeywordInSubheadings.js" );
-const getLinkStatistics = require( "../../js/researches/getLinkStatistics.js" );
-const imageCount = require( "../../js/researches/imageCountInText.js" );
-const altTagCount = require( "../../js/researches/imageAltTags.js" );
-const wordCountInText = require( "../../js/researches/wordCountInText.js" );
-const findKeywordInPageTitle = require( "../../js/researches/findKeywordInPageTitle.js" );
-const pageTitleWidth = require( "../../js/researches/pageTitleWidth.js" );
-const keywordCountInUrl = require( "../../js/researches/keywordCountInUrl" );
-const urlLength = require( "../../js/researches/urlIsTooLong.js" );
-const stopWordsInUrl = require( "../../js/researches/stopWordsInUrl" );
-const largestKeywordDistance = require( "../../js/researches/largestKeywordDistance" );
-const calculateFleschReading = require( "../../js/researches/calculateFleschReading.js" );
-const getSubheadingTextLengths = require( "../../js/researches/getSubheadingTextLengths.js" );
-const getParagraphLength = require( "../../js/researches/getParagraphLength.js" );
-const countSentencesFromText = require( "../../js/researches/countSentencesFromText.js" );
-const findTransitionWords = require( "../../js/researches/findTransitionWords.js" );
-const passiveVoice = require( "../../js/researches/getPassiveVoice.js" );
-const getSentenceBeginnings = require( "../../js/researches/getSentenceBeginnings.js" );
+import findKeywordInFirstParagraph from '../../js/researches/findKeywordInFirstParagraph.js';
+
+import keyphraseLength from '../../js/researches/keyphraseLength';
+import keywordCount from '../../js/researches/keywordCount';
+import getKeywordDensity from '../../js/researches/getKeywordDensity.js';
+import stopWordsInKeyword from '../../js/researches/stopWordsInKeyword';
+import metaDescriptionKeyword from '../../js/researches/metaDescriptionKeyword.js';
+import metaDescriptionLength from '../../js/researches/metaDescriptionLength.js';
+import matchKeywordInSubheadings from '../../js/researches/matchKeywordInSubheadings.js';
+import getLinkStatistics from '../../js/researches/getLinkStatistics.js';
+import imageCount from '../../js/researches/imageCountInText.js';
+import altTagCount from '../../js/researches/imageAltTags.js';
+import wordCountInText from '../../js/researches/wordCountInText.js';
+import findKeywordInPageTitle from '../../js/researches/findKeywordInPageTitle.js';
+import pageTitleWidth from '../../js/researches/pageTitleWidth.js';
+import keywordCountInUrl from '../../js/researches/keywordCountInUrl';
+import urlLength from '../../js/researches/urlIsTooLong.js';
+import stopWordsInUrl from '../../js/researches/stopWordsInUrl';
+import largestKeywordDistance from '../../js/researches/largestKeywordDistance';
+import calculateFleschReading from '../../js/researches/calculateFleschReading.js';
+import getSubheadingTextLengths from '../../js/researches/getSubheadingTextLengths.js';
+import getParagraphLength from '../../js/researches/getParagraphLength.js';
+import countSentencesFromText from '../../js/researches/countSentencesFromText.js';
+import findTransitionWords from '../../js/researches/findTransitionWords.js';
+import passiveVoice from '../../js/researches/getPassiveVoice.js';
+import getSentenceBeginnings from '../../js/researches/getSentenceBeginnings.js';
 import sentences from "../../js/researches/sentences";
 
 // Import test papers

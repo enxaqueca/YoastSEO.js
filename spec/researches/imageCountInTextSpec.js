@@ -1,5 +1,5 @@
-var imageCountFunction = require( "../../js/researches/imageCountInText.js" );
-var Paper = require( "../../js/values/Paper" );
+import imageCountFunction from '../../js/researches/imageCountInText.js';
+import Paper from '../../js/values/Paper';
 
 describe( "Counts images in an text", function() {
 	let imageCount;

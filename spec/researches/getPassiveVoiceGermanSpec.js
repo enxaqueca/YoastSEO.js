@@ -1,5 +1,5 @@
-var passiveVoice = require( "../../js/researches/getPassiveVoice.js" );
-var Paper = require( "../../js/values/Paper.js" );
+import passiveVoice from '../../js/researches/getPassiveVoice.js';
+import Paper from '../../js/values/Paper.js';
 
 describe( "detecting passive voice in sentences with irregularParticiples", function() {
 	it( "does not return passive for an irregular directly followed by 'sein'", function() {

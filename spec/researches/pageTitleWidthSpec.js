@@ -1,5 +1,5 @@
-var pageTitleLength = require( "../../js/researches/pageTitleWidth.js" );
-var Paper = require( "../../js/values/Paper.js" );
+import pageTitleLength from '../../js/researches/pageTitleWidth.js';
+import Paper from '../../js/values/Paper.js';
 
 describe( "the page title width research", function() {
 	it( "should return the pixels in the title", function() {
